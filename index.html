@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zeit &amp; Ordnung</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Zeit &amp; Ordnung">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#F3EEE4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#161D20" media="(prefers-color-scheme: dark)">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<style>
+:root{
+  --paper:#F3EEE4; --card:#FBF8F2; --ink:#1F2A2E; --muted:#6E716B; --line:#DED5C6;
+  --accent:#8A5A33; --accent-ink:#FBF8F2;
+  --ok:#4C7E5A; --warn:#B8862E; --over:#B4463A;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+  --radius:16px;
+}
+@media (prefers-color-scheme:dark){
+  :root{ --paper:#161D20; --card:#1F282C; --ink:#ECE5D8; --muted:#9BA19B; --line:#2F3B3F; --accent:#D2A274; --accent-ink:#1B2326; }
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.45;-webkit-text-size-adjust:100%}
+body{padding:env(safe-area-inset-top) env(safe-area-inset-right) 0 env(safe-area-inset-left)}
+main{max-width:600px;margin:0 auto;padding:18px 16px calc(96px + env(safe-area-inset-bottom))}
+h1,h2,h3{font-family:var(--serif);font-weight:600;margin:0;line-height:1.2}
+h1{font-size:30px}
+h2{font-size:21px}
+button{font:inherit;color:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}
+input{font:inherit;color:inherit}
+.kopf{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:6px 0 16px}
+.kopf small{color:var(--muted);font-size:14px}
+.karte{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px;margin-bottom:14px}
+.kicker{font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.leise{color:var(--muted);font-size:15px}
+.zeile{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;margin-top:12px;font-size:15px}
+.farbe{display:inline-flex;align-items:center;gap:7px}
+.punkt{display:inline-block;width:14px;height:14px;border-radius:50%;border:1px solid rgba(0,0,0,.18);flex:none}
+.held{position:relative;overflow:hidden;padding-top:24px}
+.held::before{content:"";position:absolute;left:0;right:0;top:0;height:8px;background:var(--lit,#4C7E5A)}
+.held h1{margin-top:2px}
+.held .unter{margin-top:6px;font-family:var(--serif);font-size:18px;color:var(--muted)}
+.chips{display:flex;gap:8px;overflow-x:auto;margin:0 -16px 14px;padding:0 16px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:15px;white-space:nowrap}
+.chip b{font-weight:600}
+.liste{list-style:none;margin:0;padding:0}
+.liste li{display:grid;grid-template-columns:62px 1fr auto;gap:10px;align-items:center;padding:11px 0;border-top:1px solid var(--line)}
+.liste li:first-child{border-top:0}
+.liste .dat{font-size:14px;color:var(--muted);line-height:1.25}
+.liste .dat b{display:block;color:var(--ink);font-size:16px;font-weight:600}
+.liste .name{font-size:16px;line-height:1.3}
+.liste .name small{display:block;color:var(--muted);font-size:13px}
+.badge{display:inline-block;font-size:11px;letter-spacing:.04em;text-transform:uppercase;border:1px solid var(--line);border-radius:6px;padding:1px 6px;color:var(--muted);margin-left:6px;vertical-align:2px}
+.knopf{display:inline-flex;align-items:center;justify-content:center;gap:6px;border:1px solid var(--line);background:var(--card);border-radius:12px;padding:10px 16px;font-size:16px}
+.knopf.haupt{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:600}
+.knopf.breit{width:100%;padding:15px;font-size:18px}
+.knopf.klein{padding:6px 10px;font-size:14px;border-radius:9px}
+.knopf:active{transform:scale(.98)}
+.textknopf{border:0;background:none;color:var(--accent);padding:4px 0;font-size:15px}
+.datum-wahl{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:4px}
+.datum-wahl input{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:6px 10px;font-size:15px}
+.widmung{background:var(--ink);color:var(--paper);border:0}
+.widmung p{margin:6px 0 10px;font-family:var(--serif);font-size:19px}
+.widmung .textknopf{color:var(--paper);opacity:.75}
+.fuss{font-size:13px;color:var(--muted);margin-top:18px}
+.predigt{margin-top:14px;padding-top:12px;border-top:1px solid var(--line);font-size:16px}
+.predigt a{color:var(--accent);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--accent) 40%,transparent)}
+.predigt .mehr{margin-top:8px;font-size:14px}
+.liste .predigt{margin-top:3px;padding-top:0;border-top:0;font-size:13px}
+.liste .predigt .leise{font-size:13px}
+
+/* Sitzungsuhr */
+.feld{width:100%;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:9px 11px;font-size:16px}
+.feld:focus{outline:2px solid var(--accent);outline-offset:-1px}
+.reihe2{display:grid;grid-template-columns:1fr 110px;gap:10px;margin-top:10px}
+label.lab{display:block;font-size:13px;color:var(--muted);margin-bottom:4px}
+.vorlagen{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.top{border-top:1px solid var(--line);padding:12px 0}
+.top:first-child{border-top:0;padding-top:4px}
+.top-kopf{display:flex;gap:10px;align-items:center}
+.top-nr{font-family:var(--serif);font-weight:600;color:var(--muted);width:26px;flex:none;text-align:right}
+.top-kopf .feld{flex:1}
+.top-fuss{display:flex;align-items:center;gap:4px;margin:8px 0 0 0}
+.mchip{border:1px solid var(--line);background:var(--paper);border-radius:9px;width:38px;height:36px;font-size:15px;padding:0}
+.mchip.an,.mfrei.an{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:600}
+.mfrei{width:46px;height:36px;border:1px solid var(--line);border-radius:9px;background:var(--card);text-align:center;font-size:15px;padding:0;-moz-appearance:textfield}
+.mfrei::-webkit-outer-spin-button,.mfrei::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.mfrei::placeholder{color:var(--muted)}
+.icon:disabled{opacity:.35}
+.minuten{display:flex;align-items:center;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.minuten button{border:0;background:var(--paper);width:34px;height:36px;font-size:19px}
+.minuten input{width:44px;border:0;border-left:1px solid var(--line);border-right:1px solid var(--line);text-align:center;height:36px;background:var(--card);font-size:16px;-moz-appearance:textfield}
+.minuten input::-webkit-outer-spin-button,.minuten input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.top-fuss .min-l{font-size:14px;color:var(--muted)}
+.top-fuss .rechts{margin-left:auto;display:flex;gap:4px}
+.top-kopf .icon{flex:none}
+.haken{flex:none;width:34px;height:34px;border-radius:50%;border:2px solid var(--line);background:var(--card);font-family:var(--serif);font-weight:600;font-size:16px;padding:0;color:var(--accent-ink)}
+.top.gewaehlt .haken{background:var(--accent);border-color:var(--accent)}
+.top:not(.gewaehlt) .feld::placeholder{color:var(--muted);font-style:italic}
+.top.gewaehlt .feld::placeholder{color:var(--ink);opacity:1}
+.top:not(.gewaehlt) .top-fuss{opacity:.5}
+.icon{border:1px solid var(--line);background:var(--card);border-radius:9px;width:34px;height:36px;font-size:15px;line-height:1}
+.summe{display:flex;justify-content:space-between;gap:10px;font-size:15px;color:var(--muted);margin-top:4px}
+.schalter{display:flex;align-items:center;gap:10px;margin-top:14px;font-size:15px}
+.schalter input{width:20px;height:20px;accent-color:var(--accent)}
+
+.lauf{text-align:center;padding:22px 18px;border-top:8px solid var(--ok);transition:border-color .4s}
+.lauf.warn{border-top-color:var(--warn)}
+.lauf.over{border-top-color:var(--over)}
+.lauf .wo{font-size:14px;color:var(--muted)}
+.lauf h1{font-size:27px;margin:10px 0 4px;min-height:1.2em;overflow-wrap:anywhere}
+.uhr{font-family:var(--sans);font-variant-numeric:tabular-nums;font-size:76px;font-weight:300;letter-spacing:-.02em;line-height:1.05;margin:14px 0 2px}
+.lauf.warn .uhr{color:var(--warn)}
+.lauf.over .uhr{color:var(--over)}
+.uhr-l{font-size:14px;color:var(--muted)}
+.balken{height:8px;background:var(--line);border-radius:4px;overflow:hidden;margin:16px 0 4px}
+.balken i{display:block;height:100%;width:0;background:var(--ok);transition:width .3s linear,background .4s}
+.lauf.warn .balken i{background:var(--warn)}
+.lauf.over .balken i{background:var(--over)}
+.steuer{display:grid;grid-template-columns:1fr 1fr 2fr;gap:10px;margin-top:18px}
+.steuer .knopf{padding:15px 8px}
+.prognose{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px}
+.prognose div{background:var(--paper);border-radius:12px;padding:10px;text-align:left}
+.prognose b{display:block;font-size:20px;font-variant-numeric:tabular-nums;font-weight:600}
+.prognose span{font-size:13px;color:var(--muted)}
+.danach{margin-top:14px;font-size:15px;color:var(--muted)}
+.pausiert .uhr{opacity:.45}
+.mini-liste{list-style:none;margin:0;padding:0;font-size:15px}
+.mini-liste li{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-top:1px solid var(--line)}
+.mini-liste li:first-child{border-top:0}
+.mini-liste li.jetzt{font-weight:600}
+.mini-liste li.fertig{color:var(--muted)}
+.mini-liste li.ende,.ende-zeile{font-weight:600;border-top:2px solid var(--line)}
+.ende-zeile{display:flex;justify-content:space-between;gap:10px;padding:12px 0 2px;margin-top:4px;font-size:16px}
+.mini-liste .z{font-variant-numeric:tabular-nums;white-space:nowrap}
+.plus{color:var(--over)} .minus{color:var(--ok)}
+table.bilanz{width:100%;border-collapse:collapse;font-size:15px;margin-top:8px}
+.bilanz th{font-weight:600;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:right;padding:6px 0 6px 8px}
+.bilanz th:first-child,.bilanz td:first-child{text-align:left;padding-left:0}
+.bilanz td{border-top:1px solid var(--line);padding:8px 0 8px 8px;text-align:right;font-variant-numeric:tabular-nums;vertical-align:top}
+.bilanz tfoot td{font-weight:600}
+.kopiert{font-size:14px;color:var(--ok);margin-left:8px}
+textarea.kopie{width:100%;height:160px;margin-top:10px;font:14px/1.4 var(--sans);background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:10px}
+
+/* Info */
+.info p{margin:8px 0}
+.info ol{margin:6px 0;padding-left:22px}
+.info h3{font-size:18px;margin-top:4px}
+
+nav.tabs{position:fixed;left:0;right:0;bottom:0;display:flex;justify-content:center;background:color-mix(in srgb,var(--paper) 88%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-top:1px solid var(--line);padding:6px 8px calc(6px + env(safe-area-inset-bottom));z-index:5}
+nav.tabs .in{display:flex;max-width:600px;width:100%}
+nav.tabs button{flex:1;text-align:center;border:0;background:none;color:var(--muted);font-size:12px;padding:6px 0 2px;border-radius:10px}
+nav.tabs button svg{display:block;margin:0 auto 3px;width:24px;height:24px}
+nav.tabs button.an{color:var(--accent);font-weight:600}
+.versteckt{display:none!important}
+</style>
+</head>
+<body>
+<main>
+  <section id="v-kirchenjahr"></section>
+  <section id="v-sitzung" class="versteckt"></section>
+  <section id="v-info" class="versteckt"></section>
+</main>
+
+<nav class="tabs"><div class="in">
+  <button type="button" data-v="kirchenjahr">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5v4M12 16.5v4M3.5 12h4M16.5 12h4"/><circle cx="12" cy="12" r="1.6" fill="currentColor"/></svg>
+    Kirchenjahr</button>
+  <button type="button" data-v="sitzung">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="13" r="7.5"/><path d="M12 13V9M12 13l3 2M9.5 3h5M12 3v2.5"/></svg>
+    Sitzungsuhr</button>
+  <button type="button" data-v="info">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5.5"/><circle cx="12" cy="7.8" r="1" fill="currentColor"/></svg>
+    Über</button>
+</div></nav>
+
+<script>
+/* ===== Widmung: hier anpassen ===== */
+const WIDMUNG = {
+  zeile: "Herzlichen Glückwunsch zum Geburtstag, Gottes Segen für alle Sitzungen und Dienste!",
+  von: "Herzliche Grüße von Sebastian Keller."
+};
+
+/* ===== Speicher (darf fehlen) ===== */
+const speicher = {
+  lies(k){ try{ const v = localStorage.getItem(k); return v ? JSON.parse(v) : null; }catch(e){ return null; } },
+  schreib(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+};
+const $ = (s,el=document) => el.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+/*KJ-START*/
+const TAG = 864e5;
+function dn(y,m,d){ return Math.round(Date.UTC(y,m,d)/TAG); }
+function vonDn(n){ const t = new Date(n*TAG); return {y:t.getUTCFullYear(), m:t.getUTCMonth(), d:t.getUTCDate()}; }
+function wt(n){ return ((n+4)%7+7)%7; } // 0 = Sonntag
+function heuteDn(){ const t = new Date(); return dn(t.getFullYear(), t.getMonth(), t.getDate()); }
+function ostern(y){
+  const a=y%19, b=Math.floor(y/100), c=y%100, d=Math.floor(b/4), e=b%4,
+        f=Math.floor((b+8)/25), g=Math.floor((b-f+1)/3), h=(19*a+b-d-g+15)%30,
+        i=Math.floor(c/4), k=c%4, l=(32+2*e+2*i-h-k)%7, m=Math.floor((a+11*h+22*l)/451),
+        mon=Math.floor((h+l-7*m+114)/31), tag=((h+l-7*m+114)%31)+1;
+  return dn(y, mon-1, tag);
+}
+function advent1(y){ const w = dn(y,11,25); const a4 = w - (wt(w)===0 ? 7 : wt(w)); return a4 - 21; }
+const FARBEN = {
+  violett:{name:"Violett", hex:"#6A4A8C"},
+  weiss:{name:"Weiß", hex:"#F4EEE0"},
+  gruen:{name:"Grün", hex:"#4C7E5A"},
+  rot:{name:"Rot", hex:"#B4463A"},
+  schwarz:{name:"Schwarz", hex:"#232323"}
+};
+const ROEM = ["I","II","III","IV","V","VI"];
+function reihe(Y){ return ROEM[((Y-2018)%6+6)%6]; }
+function kjVon(n){ const y = vonDn(n).y; return n >= advent1(y) ? y : y-1; }
+
+const kjCache = {};
+function kirchenjahr(Y){
+  if (kjCache[Y]) return kjCache[Y];
+  const E = ostern(Y+1), A = advent1(Y), A2 = advent1(Y+1);
+  const L = [];
+  const add = (d, name, sub, farbe, o={}) => {
+    const prio = o.prio ?? (o.zivil ? 0 : o.klein ? 0.5 : o.fest ? 2 : 1);
+    L.push(Object.assign({d, name, sub, farbe, Y, prio}, o));
+  };
+  const y = Y;
+  ["1. Sonntag im Advent","2. Sonntag im Advent","3. Sonntag im Advent","4. Sonntag im Advent"]
+    .forEach((n,i) => add(A+7*i, n, "", "violett"));
+  add(dn(y,11,24), "Heiligabend", "Christvesper und Christnacht", "weiss", {fest:true});
+  add(dn(y,11,25), "Christfest I", "1. Weihnachtstag", "weiss", {fest:true, feiertag:true});
+  add(dn(y,11,26), "Christfest II", "2. Weihnachtstag", "weiss", {fest:true, feiertag:true});
+  for (let d=dn(y,11,27); d<=dn(y,11,31); d++) if (wt(d)===0) add(d, "1. Sonntag nach dem Christfest", "", "weiss");
+  add(dn(y,11,31), "Altjahrsabend", "Silvester", "weiss", {fest:true});
+  add(dn(y+1,0,1), "Neujahrstag", "", "weiss", {fest:true, feiertag:true});
+  for (let d=dn(y+1,0,2); d<=dn(y+1,0,5); d++) if (wt(d)===0) add(d, "2. Sonntag nach dem Christfest", "", "weiss");
+  const epi = dn(y+1,0,6);
+  add(epi, "Epiphanias", "Fest der Erscheinung des Herrn", "weiss", {fest:true});
+  const inv = E-42, esto = inv-7;
+  const feb2 = dn(y+1,1,2);
+  let letzter = feb2 - wt(feb2);
+  if (letzter >= esto) letzter = esto - 7;
+  let k = 1;
+  for (let d = epi + (7 - wt(epi)); d < letzter; d += 7) add(d, k++ + ". Sonntag nach Epiphanias", "", "weiss");
+  add(letzter, "Letzter Sonntag nach Epiphanias", "", "weiss");
+  add(feb2, "Darstellung des Herrn", "Lichtmess", "weiss", {klein:true});
+  [["Estomihi","Sonntag vor der Passionszeit"],["Sexagesimae","2. Sonntag vor der Passionszeit"],
+   ["Septuagesimae","3. Sonntag vor der Passionszeit"],["4. Sonntag vor der Passionszeit",""],["5. Sonntag vor der Passionszeit",""]]
+    .forEach((v,i) => { const d = inv-7*(i+1); if (d > letzter) add(d, v[0], v[1], "gruen"); });
+  add(inv-4, "Aschermittwoch", "Beginn der Passionszeit", "violett", {fest:true});
+  [["Invokavit","1. Sonntag der Passionszeit"],["Reminiszere","2. Sonntag der Passionszeit"],
+   ["Okuli","3. Sonntag der Passionszeit"],["Lätare","4. Sonntag der Passionszeit",{hinweis:"oder Rosa"}],
+   ["Judika","5. Sonntag der Passionszeit"],["Palmsonntag","6. Sonntag der Passionszeit"]]
+    .forEach((v,i) => add(inv+7*i, v[0], v[1], "violett", v[2]||{}));
+  add(E-3, "Gründonnerstag", "", "weiss", {fest:true});
+  add(E-2, "Karfreitag", "", "schwarz", {fest:true, feiertag:true, hinweis:"oder ohne Paramente"});
+  add(E, "Ostersonntag", "Fest der Auferstehung des Herrn", "weiss", {fest:true});
+  add(E+1, "Ostermontag", "", "weiss", {fest:true, feiertag:true});
+  [["Quasimodogeniti","1. Sonntag nach Ostern"],["Miserikordias Domini","2. Sonntag nach Ostern"],
+   ["Jubilate","3. Sonntag nach Ostern"],["Kantate","4. Sonntag nach Ostern"],["Rogate","5. Sonntag nach Ostern"]]
+    .forEach((v,i) => add(E+7*(i+1), v[0], v[1], "weiss"));
+  add(E+39, "Christi Himmelfahrt", "", "weiss", {fest:true, feiertag:true});
+  add(E+42, "Exaudi", "6. Sonntag nach Ostern", "weiss");
+  add(E+49, "Pfingstsonntag", "Fest des Heiligen Geistes", "rot", {fest:true});
+  add(E+50, "Pfingstmontag", "", "rot", {fest:true, feiertag:true});
+  add(E+56, "Trinitatis", "Tag der Heiligen Dreifaltigkeit", "weiss");
+  const ewig = A2-7, vorl = A2-14, dritt = A2-21;
+  for (let n=1, d=E+63; d<dritt; n++, d+=7)
+    add(d, n + ". Sonntag nach Trinitatis", n===10 ? "Israelsonntag" : "", "gruen", n===10 ? {hinweis:"oder Violett"} : {});
+  add(dritt, "Drittletzter Sonntag des Kirchenjahres", "", "gruen");
+  add(vorl, "Vorletzter Sonntag des Kirchenjahres", "", "gruen");
+  add(ewig-4, "Buß- und Bettag", "", "violett", {fest:true, feiertag:true});
+  add(ewig, "Ewigkeitssonntag", "Letzter Sonntag des Kirchenjahres", "weiss");
+  add(dn(y+1,5,24), "Johannistag", "Geburt Johannes des Täufers", "weiss", {klein:true});
+  add(dn(y+1,8,29), "Michaelistag", "Tag des Erzengels Michael und aller Engel", "weiss", {klein:true});
+  const okt1 = dn(y+1,9,1);
+  add(okt1 + ((7-wt(okt1))%7), "Erntedankfest", "vielerorts am 1. Sonntag im Oktober", "gruen", {prio:2});
+  add(dn(y+1,9,31), "Reformationstag", "", "rot", {fest:true, feiertag:true});
+  add(dn(y+1,4,1), "Tag der Arbeit", "", null, {zivil:true, feiertag:true});
+  add(dn(y+1,9,3), "Tag der Deutschen Einheit", "", null, {zivil:true, feiertag:true});
+  L.sort((a,b) => a.d - b.d || b.prio - a.prio);
+  const zeiten = [
+    [A, "Advent"], [dn(y,11,24), "Christfest"], [epi, "Epiphaniaszeit"], [letzter+7, "Vorpassionszeit"],
+    [inv-4, "Passionszeit"], [E, "Osterzeit"], [E+49, "Pfingsten"], [E+56, "Trinitatiszeit"], [dritt, "Ende des Kirchenjahres"]
+  ];
+  return kjCache[Y] = {Y, E, A, A2, inv, L, zeiten};
+}
+
+function tagInfo(n){
+  const Y = kjVon(n), K = kirchenjahr(Y);
+  const heute = K.L.filter(e => e.d === n);
+  const lit = heute.filter(e => !e.zivil);
+  const primaer = lit[0] || null;
+  let woche = null;
+  for (const e of K.L) {
+    if (e.d > n) break;
+    if (wt(e.d) === 0 && !e.zivil && !e.klein && (!woche || e.d > woche.d)) woche = e;
+  }
+  let farbe = primaer ? primaer.farbe : woche.farbe;
+  let hinweis = primaer ? primaer.hinweis : woche.hinweis;
+  if (!primaer) {
+    if (n >= dn(Y,11,24) && n <= dn(Y+1,0,5)) { farbe = "weiss"; hinweis = null; }
+    else if (n >= K.inv-4 && n < K.E) { farbe = "violett"; hinweis = null; }
+  }
+  let zeit = K.zeiten[0][1];
+  for (const [ab, name] of K.zeiten) if (n >= ab) zeit = name;
+  return {n, Y, reihe: reihe(Y), heute, lit, primaer, woche, farbe, hinweis, zeit, feiertag: heute.some(e => e.feiertag)};
+}
+
+function kommende(n, anzahl){
+  const Y = kjVon(n), out = [];
+  for (const y of [Y, Y+1, Y+2]) {
+    for (const e of kirchenjahr(y).L) { if (e.d >= n) out.push(e); if (out.length >= anzahl) return out; }
+  }
+  return out;
+}
+function naechstes(n, name){
+  for (const y of [kjVon(n), kjVon(n)+1]) {
+    const e = kirchenjahr(y).L.find(x => x.d >= n && x.name === name);
+    if (e) return e;
+  }
+  return null;
+}
+/*KJ-END*/
+
+/* ===== Predigttexte (Ordnung gottesdienstlicher Texte und Lieder, Reihen I–VI) ===== */
+const PREDIGT_ROH = `I|1. Sonntag im Advent||Matthäus 21,1-11
+I|2. Sonntag im Advent||Jesaja 35,3-10
+I|3. Sonntag im Advent||Römer 15,4-13
+I|4. Sonntag im Advent||Lukas 1,(26-38)39-56
+I|Heiligabend|Christvesper|Jesaja 9,1-6
+I|Heiligabend|Christnacht|1. Timotheus 3,16
+I|Christfest I||Johannes 1,1-5.9-14(16-18)
+I|Christfest II||Römer 1,1-7
+I|1. Sonntag nach dem Christfest||Matthäus 2,13-18(19-23)
+I|Altjahrsabend||Jesaja 51,4-6
+I|Neujahrstag||Josua 1,1-9
+I|2. Sonntag nach dem Christfest||1. Johannes 5,11-13
+I|Epiphanias||Matthäus 2,1-12
+I|1. Sonntag nach Epiphanias||Josua 3,5-11.17
+I|2. Sonntag nach Epiphanias||Römer 12,9-16
+I|3. Sonntag nach Epiphanias||Johannes 4,5-14
+I|Letzter Sonntag nach Epiphanias||2. Mose 3,1-8a(8b.9)10(11-12)13-14(15)
+I|Darstellung des Herrn||Johannes 8,12
+I|4. Sonntag vor der Passionszeit||Markus 4,35-41
+I|Septuagesimae||Prediger 7,15-18
+I|Sexagesimae||Apostelgeschichte 16,9-15
+I|Estomihi||Lukas 10,38-42
+I|Aschermittwoch||Joel 2,12-19
+I|Invokavit||Hebräer 4,14-16
+I|Reminiszere||Johannes 3,14-21
+I|Okuli||Jeremia 20,7-11a(11b-13)
+I|Lätare||Johannes 6,47-51
+I|Judika||Johannes 18,28-19,5
+I|Palmsonntag||Jesaja 50,4-9
+I|Gründonnerstag||1. Korinther 11,(17-22)23-26(27-29.33-34a)
+I|Karfreitag||Johannes 19,16-30
+I|Ostersonntag|Osternacht|1. Thessalonicher 4,13-18
+I|Ostersonntag|Ostersonntag|Johannes 20,11-18
+I|Ostermontag||Jesaja 25,6-9
+I|Quasimodogeniti||1. Petrus 1,3-9
+I|Miserikordias Domini||Johannes 10,11-16(27-30)
+I|Jubilate||Sprüche 8,22-36
+I|Kantate||Apostelgeschichte 16,23-34
+I|Rogate||Johannes 16,23b-28(29-32)33
+I|Christi Himmelfahrt||1. Könige 8,22-24.26-28
+I|Exaudi||Epheser 3,14-21
+I|Pfingstsonntag||Johannes 14,15-19(20-23a)23b-27
+I|Pfingstmontag||Matthäus 16,13-19
+I|Trinitatis||2. Korinther 13,11-13
+I|1. Sonntag nach Trinitatis||Johannes 5,39-47
+I|Johannistag||Matthäus 3,1-12
+I|2. Sonntag nach Trinitatis||Jesaja 55,1-5
+I|3. Sonntag nach Trinitatis||1. Timotheus 1,12-17
+I|4. Sonntag nach Trinitatis||Lukas 6,36-42
+I|5. Sonntag nach Trinitatis||Matthäus 9,35-10,1(2-4)5-10
+I|6. Sonntag nach Trinitatis||1. Petrus 2,2-10
+I|7. Sonntag nach Trinitatis||Johannes 6,30-35
+I|8. Sonntag nach Trinitatis||Jesaja 2,1-5
+I|9. Sonntag nach Trinitatis||Philipper 3,(4b-6)7-14
+I|10. Sonntag nach Trinitatis|Kirche und Israel|Markus 12,28-34
+I|10. Sonntag nach Trinitatis|Gedenktag der Zerstörung Jerusalems|Lukas 19,41-48
+I|11. Sonntag nach Trinitatis||Hiob 23,1-17
+I|12. Sonntag nach Trinitatis||Apostelgeschichte 3,1-10
+I|13. Sonntag nach Trinitatis||Markus 3,31-35
+I|14. Sonntag nach Trinitatis||1. Mose 28,10-19a(19b-22)
+I|15. Sonntag nach Trinitatis||1. Petrus 5,5b-11
+I|Michaelistag||Lukas 10,17-20
+I|Erntedankfest||Jesaja 58,7-12
+I|17. Sonntag nach Trinitatis||Josua 2,1-21
+I|18. Sonntag nach Trinitatis||Jakobus 2,14-26
+I|19. Sonntag nach Trinitatis||Johannes 5,1-16
+I|Reformationstag||5. Mose 6,4-9
+I|20. Sonntag nach Trinitatis||1. Mose 8,18-22; 9,12-17
+I|Drittletzter Sonntag des Kirchenjahres||Lukas 6,27-38
+I|Vorletzter Sonntag des Kirchenjahres||Hiob 14,1-6(7-12)13(14)15-17
+I|Buß- und Bettag||Römer 2,1-11
+I|Ewigkeitssonntag|Ewigkeitssonntag|Matthäus 25,1-13
+I|Ewigkeitssonntag|Totensonntag|Johannes 5,24-29
+I|5. Sonntag vor der Passionszeit||1. Korinther 1,4-9
+I|16. Sonntag nach Trinitatis||Johannes 11,1(2)3.17-27(28-38a)38b-45
+I|21. Sonntag nach Trinitatis||Epheser 6,10-17
+I|22. Sonntag nach Trinitatis||Matthäus 18,21-35
+I|23. Sonntag nach Trinitatis||Amos 7,10-17
+I|24. Sonntag nach Trinitatis||1. Korinther 9,16-23
+II|1. Sonntag im Advent||Römer 13,8-12
+II|2. Sonntag im Advent||Lukas 21,25-33
+II|3. Sonntag im Advent||Lukas 3,(1-2)3-14(15-17)18(19-20)
+II|4. Sonntag im Advent||2. Korinther 1,18-22
+II|Heiligabend|Christvesper|Hesekiel 37,24-28
+II|Heiligabend|Christnacht|Sacharja 2,14-17
+II|Christfest I||Titus 3,4-7
+II|Christfest II||Matthäus 1,18-25
+II|1. Sonntag nach dem Christfest||Hiob 42,1-6
+II|Altjahrsabend||Hebräer 13,8-9b
+II|Neujahrstag||Johannes 14,1-6
+II|2. Sonntag nach dem Christfest||Jesaja 61,1-3(4.9)10.11
+II|Epiphanias||Epheser 3,1-7
+II|1. Sonntag nach Epiphanias||Matthäus 3,13-17
+II|2. Sonntag nach Epiphanias||Jeremia 14,1(2)3-4(5-6)7-9
+II|3. Sonntag nach Epiphanias||Apostelgeschichte 10,21-35
+II|Letzter Sonntag nach Epiphanias||Offenbarung 1,9-18
+II|Sexagesimae||Hesekiel 2,1-5(6-7)8-10; 3,1-3
+II|Estomihi||Lukas 18,31-43
+II|Aschermittwoch||Matthäus 9,14-17
+II|Invokavit||1. Mose 3,1-19(20-24)
+II|Reminiszere||Römer 5,1-5(6-11)
+II|Okuli||Lukas 9,57-62
+II|Lätare||Jesaja 66,10-14
+II|Judika||Hebräer 13,12-14
+II|Palmsonntag||Markus 14,(1-2)3-9
+II|Gründonnerstag||2. Mose 12,1-4(5)6-8(9)10-14
+II|Karfreitag||2. Korinther 5,(14b-18)19-21
+II|Ostersonntag|Osternacht|2. Timotheus 2,8-13
+II|Ostersonntag|Ostersonntag|1. Korinther 15,(12-18)19-28
+II|Ostermontag||Lukas 24,36-45
+II|Quasimodogeniti||Jesaja 40,26-31
+II|Miserikordias Domini||1. Petrus 2,21b-25
+II|Jubilate||Johannes 15,1-8
+II|Kantate||2. Chronik 5,2-5(6-11)12-14
+II|Rogate||Matthäus 6,5-15
+II|Christi Himmelfahrt||Johannes 17,20-26
+II|Exaudi||Jeremia 31,31-34
+II|Pfingstsonntag||Apostelgeschichte 2,1-21
+II|Pfingstmontag||Johannes 20,19-23
+II|Trinitatis||4. Mose 6,22-27
+II|1. Sonntag nach Trinitatis||Apostelgeschichte 4,32-37
+II|2. Sonntag nach Trinitatis||Matthäus 11,25-30
+II|3. Sonntag nach Trinitatis||Micha 7,18-20
+II|4. Sonntag nach Trinitatis||Römer 12,17-21
+II|5. Sonntag nach Trinitatis||Lukas 5,1-11
+II|6. Sonntag nach Trinitatis||5. Mose 7,6-12
+II|7. Sonntag nach Trinitatis||Hebräer 13,1-3
+II|8. Sonntag nach Trinitatis||Johannes 9,1-7
+II|9. Sonntag nach Trinitatis||Jeremia 1,4-10
+II|10. Sonntag nach Trinitatis|Kirche und Israel|Römer 11,25-32
+II|11. Sonntag nach Trinitatis||Lukas 18,9-14
+II|12. Sonntag nach Trinitatis||1. Korinther 3,9-17
+II|13. Sonntag nach Trinitatis||Apostelgeschichte 6,1-7
+II|14. Sonntag nach Trinitatis||Lukas 19,1-10
+II|15. Sonntag nach Trinitatis||1. Mose 2,4b-9(10-14)15(18-25)
+II|16. Sonntag nach Trinitatis||2. Timotheus 1,7-10
+II|17. Sonntag nach Trinitatis||Matthäus 15,21-28
+II|Erntedankfest||Markus 8,1-9
+II|19. Sonntag nach Trinitatis||Epheser 4,22-32
+II|20. Sonntag nach Trinitatis||Markus 2,23-28
+II|21. Sonntag nach Trinitatis||Jeremia 29,1.4-7(8-9)10-14
+II|Reformationstag||Matthäus 10,26b-33
+II|22. Sonntag nach Trinitatis||Römer 7,14-25a
+II|Drittletzter Sonntag des Kirchenjahres||1. Thessalonicher 5,1-6(7-11)
+II|Vorletzter Sonntag des Kirchenjahres||Lukas 16,1-8(9)
+II|Buß- und Bettag||Jesaja 1,10-18
+II|Ewigkeitssonntag|Ewigkeitssonntag|Offenbarung 21,1-7
+II|Ewigkeitssonntag|Totensonntag|1. Korinther 15,35-38.42-44a
+II|Darstellung des Herrn||1. Johannes 1,1-4
+II|5. Sonntag vor der Passionszeit||Jesaja 40,12-25
+II|4. Sonntag vor der Passionszeit||2. Korinther 1,8-11
+II|Septuagesimae||Matthäus 20,1-16
+II|18. Sonntag nach Trinitatis||5. Mose 30,11-14
+II|23. Sonntag nach Trinitatis||Matthäus 22,15-22
+II|24. Sonntag nach Trinitatis||Jesaja 51,9-16
+II|Johannistag||Matthäus 11,11-15
+II|Michaelistag||Offenbarung 12,7-12
+III|1. Sonntag im Advent||Sacharja 9,9-10
+III|2. Sonntag im Advent||Jakobus 5,7-8(9-11)
+III|3. Sonntag im Advent||Lukas 1,67-79
+III|4. Sonntag im Advent||1. Mose 18,1-2.9-15
+III|Heiligabend|Christvesper|Jesaja 11,1-10
+III|Heiligabend|Christnacht|Matthäus 1,18-25
+III|Christfest I||Jesaja 52,7-10
+III|Christfest II||Hebräer 1,1-4(5-14)
+III|1. Sonntag nach dem Christfest||Lukas 2,(22-24)25-38(39-40)
+III|Altjahrsabend||2. Mose 13,20-22
+III|Neujahrstag||Philipper 4,10-13(14-20)
+III|2. Sonntag nach dem Christfest||Lukas 2,41-52
+III|Epiphanias||Jesaja 60,1-6
+III|1. Sonntag nach Epiphanias||Römer 12,1-8
+III|2. Sonntag nach Epiphanias||Johannes 2,1-11
+III|3. Sonntag nach Epiphanias||Rut 1,1-19a
+III|Letzter Sonntag nach Epiphanias||2. Petrus 1,16-19(20-21)
+III|Estomihi||Jesaja 58,1-9a
+III|Invokavit||Johannes 13,21-30
+III|Reminiszere||Jesaja 5,1-7
+III|Okuli||Epheser 5,1-2(3-7)8-9
+III|Lätare||Johannes 12,20-24
+III|Judika||Hiob 19,19-27
+III|Palmsonntag||Hebräer 11,1-2(8-12.39-40); 12,1-3
+III|Gründonnerstag||Matthäus 26,17-30
+III|Karfreitag||Jesaja 52,13-15; 53,1-12
+III|Ostersonntag||2. Mose 14,8-14.19-23.28-30a; 15,20-21
+III|Ostersonntag|Osternacht|Matthäus 28,1-10
+III|Quasimodogeniti||Johannes 21,1-14
+III|Miserikordias Domini||Hesekiel 34,1-2(3-9)10-16.31
+III|Jubilate||Apostelgeschichte 17,22-34
+III|Kantate||Lukas 19,37-40
+III|Rogate||Daniel 9,4-5.16-19
+III|Christi Himmelfahrt||Epheser 1,(15-20a)20b-23
+III|Exaudi||Johannes 7,37-39
+III|Pfingstsonntag||1. Mose 11,1-9
+III|Pfingstmontag||1. Korinther 12,4-11
+III|Trinitatis||Johannes 3,1-8(9-13)
+III|1. Sonntag nach Trinitatis||Jona 1,1-2,2(3-10)11
+III|2. Sonntag nach Trinitatis||1. Korinther 14,1-12(23-25)
+III|3. Sonntag nach Trinitatis||Lukas 15,1-10
+III|4. Sonntag nach Trinitatis||1. Mose 50,15-21
+III|5. Sonntag nach Trinitatis||1. Korinther 1,18-25
+III|7. Sonntag nach Trinitatis||1. Könige 17,1-16
+III|8. Sonntag nach Trinitatis||1. Korinther 6,9-14(15-18)19-20
+III|10. Sonntag nach Trinitatis|Kirche und Israel|2. Mose 19,1-6
+III|11. Sonntag nach Trinitatis||Epheser 2,4-10
+III|13. Sonntag nach Trinitatis||1. Mose 4,1-16a
+III|14. Sonntag nach Trinitatis||1. Thessalonicher 5,14-24
+III|15. Sonntag nach Trinitatis||Lukas 17,5-6
+III|16. Sonntag nach Trinitatis||Klagelieder 3,22-26.31-32
+III|Erntedankfest||2. Korinther 9,6-15
+III|22. Sonntag nach Trinitatis||Jesaja 44,21-23
+III|Reformationstag||Galater 5,1-6
+III|Vorletzter Sonntag des Kirchenjahres||2. Korinther 5,1-10
+III|Ewigkeitssonntag|Ewigkeitssonntag|Jesaja 65,17-19(20-22)23-25
+III|Ewigkeitssonntag|Totensonntag|5. Mose 34,1-8
+III|Darstellung des Herrn||Jesaja 49,1-6
+III|5. Sonntag vor der Passionszeit||Matthäus 21,28-32
+III|4. Sonntag vor der Passionszeit||Jesaja 51,9-16
+III|Septuagesimae||Philipper 2,12-13
+III|Sexagesimae||Lukas 8,4-8(9-15)
+III|Aschermittwoch||Psalm 51,1-14(15-21)
+III|Ostermontag||Offenbarung 5,6-14
+III|6. Sonntag nach Trinitatis||Matthäus 28,16-20
+III|9. Sonntag nach Trinitatis||Matthäus 7,24-27
+III|12. Sonntag nach Trinitatis||Markus 7,31-37
+III|17. Sonntag nach Trinitatis||Römer 10,9-17(18)
+III|18. Sonntag nach Trinitatis||Markus 10,17-27
+III|19. Sonntag nach Trinitatis||Jesaja 38,9-20
+III|20. Sonntag nach Trinitatis||Prediger 12,1-7
+III|21. Sonntag nach Trinitatis||Matthäus 10,34-39
+III|23. Sonntag nach Trinitatis||Philipper 3,17-21
+III|24. Sonntag nach Trinitatis||Markus 1,21-28
+III|Drittletzter Sonntag des Kirchenjahres||Psalm 85,1-14
+III|Buß- und Bettag||Matthäus 7,12-20
+III|Johannistag||Lukas 1,(5-25)57-66.80
+III|Michaelistag||1. Mose 21,8-21
+IV|1. Sonntag im Advent||Jeremia 23,5-8
+IV|2. Sonntag im Advent||Jesaja 63,15-64,3
+IV|3. Sonntag im Advent||1. Korinther 4,1-5
+IV|4. Sonntag im Advent||Lukas 1,26-38(39-56)
+IV|Christfest I||1. Johannes 3,1-2(3-5)
+IV|Christfest II||Jesaja 7,10-14
+IV|1. Sonntag nach dem Christfest||1. Johannes 1,1-4
+IV|Epiphanias||Johannes 1,15-18
+IV|1. Sonntag nach Epiphanias||Jesaja 42,1-9
+IV|2. Sonntag nach Epiphanias||1. Korinther 2,1-10
+IV|Letzter Sonntag nach Epiphanias||2. Mose 34,29-35
+IV|Septuagesimae||Jeremia 9,22-23
+IV|Sexagesimae||Hebräer 4,12-13
+IV|Aschermittwoch||2. Mose 32,1-6.15-20
+IV|Invokavit||2. Korinther 6,1-10
+IV|Okuli||1. Könige 19,1-8(9-13a)
+IV|Lätare||2. Korinther 1,3-7
+IV|Palmsonntag||Johannes 17,1-8
+IV|Gründonnerstag||1. Korinther 10,16-17
+IV|Karfreitag||Lukas 23,32-49
+IV|Ostersonntag|Osternacht|Kolosser 3,1-4
+IV|Ostersonntag|Ostersonntag|Markus 16,1-8
+IV|Ostermontag||Jona 2,(1-2)3-10(11)
+IV|Quasimodogeniti||Kolosser 2,12-15
+IV|Miserikordias Domini||Johannes 21,15-19
+IV|Jubilate||1. Mose 1,1-4a(4b-25)26-28(29-30)31a(31b); 2,1-4a
+IV|Kantate||Kolosser 3,12-17
+IV|Rogate||Lukas 11,(1-4)5-13
+IV|Christi Himmelfahrt||Daniel 7,1-3(4-8)9-14
+IV|Pfingstmontag||4. Mose 11,11-12.14-17.24-25(26-30)
+IV|1. Sonntag nach Trinitatis||Lukas 16,19-31
+IV|2. Sonntag nach Trinitatis||Jona 3,1-10
+IV|3. Sonntag nach Trinitatis||Hesekiel 18,1-4.21-24.30-32
+IV|4. Sonntag nach Trinitatis||Johannes 8,3-11
+IV|5. Sonntag nach Trinitatis||1. Mose 12,1-4a
+IV|7. Sonntag nach Trinitatis||Johannes 6,1-15
+IV|11. Sonntag nach Trinitatis||2. Samuel 12,1-10.13-15a
+IV|12. Sonntag nach Trinitatis||Apostelgeschichte 9,1-20
+IV|13. Sonntag nach Trinitatis||Lukas 10,25-37
+IV|14. Sonntag nach Trinitatis||Jesaja 12,1-6
+IV|15. Sonntag nach Trinitatis||Galater 5,25-6,10
+IV|17. Sonntag nach Trinitatis||Jesaja 49,1-6
+IV|18. Sonntag nach Trinitatis||Epheser 5,15-20
+IV|20. Sonntag nach Trinitatis||Hohelied 8,6b-7
+IV|21. Sonntag nach Trinitatis||Johannes 15,9-12(13-17)
+IV|Erntedankfest||5. Mose 8,7-18
+IV|Drittletzter Sonntag des Kirchenjahres||Lukas 17,20-24(25-30)
+IV|Vorletzter Sonntag des Kirchenjahres||Lukas 18,1-8
+IV|Ewigkeitssonntag|Ewigkeitssonntag|Markus 13,28-37
+IV|Ewigkeitssonntag|Totensonntag|Johannes 6,37-40
+IV|Heiligabend|Christvesper|Micha 5,1-4a
+IV|Heiligabend|Christnacht|Titus 2,11-14
+IV|Altjahrsabend||Matthäus 13,24-30
+IV|Neujahrstag||Sprüche 16,(1-8)9
+IV|2. Sonntag nach dem Christfest||1. Johannes 5,11-13
+IV|3. Sonntag nach Epiphanias||Matthäus 8,5-13
+IV|Darstellung des Herrn||Lukas 2,22-35(36-40)
+IV|5. Sonntag vor der Passionszeit||1. Korinther 1,4-9
+IV|4. Sonntag vor der Passionszeit||Matthäus 14,22-33
+IV|Estomihi||Markus 8,31-38
+IV|Reminiszere||Matthäus 26,36-46
+IV|Judika||Markus 10,35-45
+IV|Exaudi||Römer 8,26-30
+IV|Pfingstsonntag||Römer 8,1-2(3-9)10-11
+IV|Trinitatis||Römer 11,(32)33-36
+IV|6. Sonntag nach Trinitatis||Römer 6,3-8(9-11)
+IV|8. Sonntag nach Trinitatis||Markus 12,41-44
+IV|9. Sonntag nach Trinitatis||Matthäus 25,14-30
+IV|10. Sonntag nach Trinitatis|Kirche und Israel|Matthäus 5,17-20
+IV|16. Sonntag nach Trinitatis||Lukas 7,11-17
+IV|19. Sonntag nach Trinitatis||Markus 2,1-12
+IV|22. Sonntag nach Trinitatis||Matthäus 18,15-20
+IV|23. Sonntag nach Trinitatis||2. Mose 1,8-20
+IV|24. Sonntag nach Trinitatis||1. Korinther 9,16-23
+IV|Buß- und Bettag||Offenbarung 3,1-6
+IV|Johannistag||Apostelgeschichte 19,1-7
+IV|Michaelistag||Matthäus 18,1-6.10
+IV|Reformationstag||Psalm 46,1-12
+V|1. Sonntag nach Trinitatis||1. Johannes 4,(13-16a)16b-21
+V|22. Sonntag nach Trinitatis||1. Johannes 2,12-14
+V|1. Sonntag im Advent||Offenbarung 3,14-22
+V|2. Sonntag im Advent||Hohelied 2,8-13
+V|3. Sonntag im Advent||Jesaja 40,1-11
+V|4. Sonntag im Advent||Philipper 4,4-7
+V|Quasimodogeniti||1. Mose 32,23-32
+V|Vorletzter Sonntag des Kirchenjahres||Matthäus 25,31-46
+V|Heiligabend|Christvesper|Lukas 2,1-20
+V|Heiligabend|Christnacht|Hesekiel 34,23-31
+V|Christfest I||Kolosser 2,3(4-5)6-10
+V|Christfest II||Matthäus 1,1-17
+V|1. Sonntag nach dem Christfest||Jesaja 49,13-16
+V|Altjahrsabend||Römer 8,31b-39
+V|Neujahrstag||Lukas 4,16-21
+V|2. Sonntag nach dem Christfest||Jesaja 61,1-3(4.9)10.11
+V|Epiphanias||2. Korinther 4,3-6
+V|1. Sonntag nach Epiphanias||Johannes 1,29-34
+V|3. Sonntag nach Epiphanias||Römer 1,13-17
+V|Letzter Sonntag nach Epiphanias||Matthäus 17,1-9
+V|Darstellung des Herrn||Hebräer 2,14-18
+V|5. Sonntag vor der Passionszeit||Jesaja 40,12-25
+V|4. Sonntag vor der Passionszeit||Markus 5,24b-34
+V|Septuagesimae||Matthäus 9,9-13
+V|Sexagesimae||Jesaja 55,(6-7)8-12a
+V|Estomihi||1. Korinther 13,1-13
+V|Aschermittwoch||Matthäus 6,16-21
+V|Invokavit||Hiob 2,1-13
+V|Reminiszere||Markus 12,1-12
+V|Okuli||Lukas 22,47-53
+V|Judika||Hebräer 5,(1-6)7-9(10)
+V|Palmsonntag||Johannes 12,12-19
+V|Gründonnerstag||Lukas 22,39-46
+V|Karfreitag||Kolosser 1,13-20
+V|Ostersonntag|Osternacht|Jesaja 26,13-14(15-18)19
+V|Ostersonntag|Ostersonntag|1. Korinther 15,1-11
+V|Ostermontag||Lukas 24,13-35
+V|Miserikordias Domini||1. Petrus 5,1-4
+V|Jubilate||Johannes 16,16-23a
+V|Kantate||1. Samuel 16,14-23
+V|Rogate||1. Timotheus 2,1-6a
+V|Christi Himmelfahrt||Lukas 24,(44-49)50-53
+V|Exaudi||1. Samuel 3,1-10
+V|Pfingstsonntag||1. Korinther 2,12-16
+V|Pfingstmontag||Johannes 4,19-26
+V|Trinitatis||Jesaja 6,1-13
+V|2. Sonntag nach Trinitatis||Lukas 14,(15)16-24
+V|3. Sonntag nach Trinitatis||Jona 3,10; 4,1-11
+V|4. Sonntag nach Trinitatis||1. Petrus 3,8-17
+V|5. Sonntag nach Trinitatis||Johannes 1,35-51
+V|6. Sonntag nach Trinitatis||Jesaja 43,1-7
+V|7. Sonntag nach Trinitatis||Apostelgeschichte 2,41-47
+V|8. Sonntag nach Trinitatis||Matthäus 5,13-16
+V|9. Sonntag nach Trinitatis||1. Könige 3,5-15(16-28)
+V|10. Sonntag nach Trinitatis|Kirche und Israel|5. Mose 4,5-20
+V|11. Sonntag nach Trinitatis||Lukas 7,36-50
+V|12. Sonntag nach Trinitatis||Jesaja 29,17-24
+V|13. Sonntag nach Trinitatis||1. Johannes 4,7-12
+V|14. Sonntag nach Trinitatis||Lukas 17,11-19
+V|15. Sonntag nach Trinitatis||1. Mose 15,1-6
+V|16. Sonntag nach Trinitatis||Hebräer 10,35-36(37-38)39
+V|17. Sonntag nach Trinitatis||Markus 9,17-27
+V|18. Sonntag nach Trinitatis||2. Mose 20,1-17
+V|19. Sonntag nach Trinitatis||Jakobus 5,13-16
+V|20. Sonntag nach Trinitatis||Markus 10,2-9(10-12)13-16
+V|21. Sonntag nach Trinitatis||1. Mose 13,1-12(13-18)
+V|23. Sonntag nach Trinitatis||Matthäus 5,33-37
+V|24. Sonntag nach Trinitatis||Jesaja 51,9-16
+V|Drittletzter Sonntag des Kirchenjahres||Römer 8,18-25
+V|Buß- und Bettag||Hesekiel 22,23-31
+V|Ewigkeitssonntag|Ewigkeitssonntag|2. Petrus 3,(3-7)8-13
+V|Ewigkeitssonntag|Totensonntag|Daniel 12,1b-3
+V|Johannistag||Jesaja 40,1-8
+V|Michaelistag||Apostelgeschichte 5,12.17-21(22-27a)27b-29
+V|Erntedankfest||Lukas 12,15-21
+V|Reformationstag||Matthäus 5,1-10(11-12)
+VI|4. Sonntag im Advent||Jesaja 62,1-5
+VI|Heiligabend|Christvesper|Galater 4,4-7
+VI|Heiligabend|Christnacht|Lukas 2,1-20
+VI|Christfest I||2. Mose 2,1-10
+VI|Christfest II||2. Korinther 8,7-9
+VI|1. Sonntag nach dem Christfest||Johannes 12,44-50
+VI|Neujahrstag||Jakobus 4,13-15
+VI|Epiphanias||1. Könige 10,1-13
+VI|1. Sonntag nach Epiphanias||1. Korinther 1,26-31
+VI|2. Sonntag nach Epiphanias||Hebräer 12,12-18(19-21)22-25a
+VI|3. Sonntag nach Epiphanias||2. Könige 5,(1-8)9-15(16-18)19a
+VI|Letzter Sonntag nach Epiphanias||2. Korinther 4,6-10
+VI|Darstellung des Herrn||2. Mose 13,1-2.14-16
+VI|Estomihi||Amos 5,21-24
+VI|Aschermittwoch||2. Petrus 1,2-11
+VI|Reminiszere||4. Mose 21,4-9
+VI|Okuli||1. Petrus 1,(13-17)18-21
+VI|Judika||1. Mose 22,1-14(15-19)
+VI|Gründonnerstag||Johannes 13,1-15.34-35
+VI|Ostersonntag|Osternacht|Johannes 5,19-21
+VI|Ostersonntag|Ostersonntag|1. Samuel 2,1-8a
+VI|Ostermontag||1. Korinther 15,50-58
+VI|Quasimodogeniti||Johannes 20,19-20(21-23)24-29
+VI|Miserikordias Domini||1. Mose 16,1-16
+VI|Jubilate||2. Korinther 4,14-18
+VI|Rogate||2. Mose 32,7-14
+VI|Christi Himmelfahrt||Apostelgeschichte 1,3-11
+VI|Exaudi||Johannes 16,5-15
+VI|Pfingstsonntag||Hesekiel 37,1-14
+VI|Pfingstmontag||Epheser 4,(1-6)11-15(16)
+VI|Trinitatis||Epheser 1,3-14
+VI|1. Sonntag nach Trinitatis||Jeremia 23,16-29
+VI|2. Sonntag nach Trinitatis||Epheser 2,(11-16)17-22
+VI|3. Sonntag nach Trinitatis||Lukas 15,1-3.11b-32
+VI|4. Sonntag nach Trinitatis||1. Samuel 24,1-20
+VI|5. Sonntag nach Trinitatis||2. Korinther (11,18.23b-30); 12,1-10
+VI|6. Sonntag nach Trinitatis||Apostelgeschichte 8,26-39
+VI|Johannistag||Johannes 3,22-30
+VI|7. Sonntag nach Trinitatis||2. Mose 16,2-3.11-18
+VI|8. Sonntag nach Trinitatis||Epheser 5,8b-14
+VI|10. Sonntag nach Trinitatis|Kirche und Israel|Sacharja 8,20-23
+VI|10. Sonntag nach Trinitatis|Gedenktag der Zerstörung Jerusalems|5. Mose 30,1-6(7-10)
+VI|11. Sonntag nach Trinitatis||Galater 2,16-21
+VI|12. Sonntag nach Trinitatis||Lukas 13,10-17
+VI|13. Sonntag nach Trinitatis||3. Mose 19,1-3.13-18.33-34
+VI|17. Sonntag nach Trinitatis||Galater 3,26-29
+VI|Erntedankfest||1. Timotheus 4,4-5
+VI|18. Sonntag nach Trinitatis||1. Petrus 4,7-11
+VI|20. Sonntag nach Trinitatis||2. Korinther 3,3-6(7-9)
+VI|Buß- und Bettag||Lukas 13,(1-5)6-9
+VI|1. Sonntag im Advent||Psalm 24,1-10
+VI|2. Sonntag im Advent||Offenbarung 3,7-13
+VI|3. Sonntag im Advent||Matthäus 11,2-10
+VI|Vorletzter Sonntag des Kirchenjahres||Römer 14,(1-6)7-13
+VI|Altjahrsabend||Prediger 3,1-15
+VI|2. Sonntag nach dem Christfest||Lukas 2,41-52
+VI|5. Sonntag vor der Passionszeit||Matthäus 21,28-32
+VI|4. Sonntag vor der Passionszeit||1. Mose 8,1-12
+VI|Septuagesimae||1. Korinther 9,19-27
+VI|Sexagesimae||Markus 4,26-29
+VI|Invokavit||Matthäus 4,1-11
+VI|Palmsonntag||Philipper 2,5-11
+VI|Karfreitag||Matthäus 27,33-54
+VI|Kantate||Offenbarung 15,2-4
+VI|9. Sonntag nach Trinitatis||Matthäus 13,44-46
+VI|14. Sonntag nach Trinitatis||Römer 8,14-17
+VI|15. Sonntag nach Trinitatis||Matthäus 6,25-34
+VI|16. Sonntag nach Trinitatis||Psalm 16,(1-4)5-11
+VI|19. Sonntag nach Trinitatis||2. Mose 34,4-10
+VI|21. Sonntag nach Trinitatis||Matthäus 5,38-48
+VI|22. Sonntag nach Trinitatis||Micha 6,1-8
+VI|23. Sonntag nach Trinitatis||Römer 13,1-7
+VI|24. Sonntag nach Trinitatis||Markus 1,21-28
+VI|Drittletzter Sonntag des Kirchenjahres||Micha 4,1-5(7b)
+VI|Ewigkeitssonntag|Ewigkeitssonntag|Psalm 126,1-6
+VI|Ewigkeitssonntag|Totensonntag|Psalm 90,1-14
+VI|Michaelistag||4. Mose 22,31-35
+VI|Reformationstag||Römer 3,21-28`;
+const PREDIGT = {};
+PREDIGT_ROH.split("\n").forEach(z => {
+  const [r, anlass, label, ref] = z.split("|");
+  if (!ref) return;
+  ((PREDIGT[r] ??= {})[anlass] ??= []).push({label, ref: ref.trim()});
+});
+const DKJ = {};
+`1. Sonntag im Advent|https://www.daskirchenjahr.de/tag.php?name=1advent&zeit=Advent&typ=proprium
+2. Sonntag im Advent|https://www.daskirchenjahr.de/tag.php?name=2advent&zeit=Advent&typ=proprium
+3. Sonntag im Advent|https://www.daskirchenjahr.de/tag.php?name=3advent&zeit=Advent&typ=proprium
+4. Sonntag im Advent|https://www.daskirchenjahr.de/tag.php?name=4advent&zeit=Advent&typ=proprium
+Quasimodogeniti|https://www.daskirchenjahr.de/tag.php?name=quasimodogeniti&zeit=Ostern&typ=proprium
+Vorletzter Sonntag des Kirchenjahres|https://www.daskirchenjahr.de/tag.php?name=vorletzter&zeit=Kirchenjahresende&typ=proprium
+Heiligabend|https://www.daskirchenjahr.de/tag.php?name=christvesper&zeit=Christfest&typ=proprium
+Christfest I|https://www.daskirchenjahr.de/tag.php?name=christfest1&zeit=Christfest&typ=proprium
+Christfest II|https://www.daskirchenjahr.de/tag.php?name=christfest2&zeit=Christfest&typ=proprium
+1. Sonntag nach dem Christfest|https://www.daskirchenjahr.de/tag.php?name=1nchristfest&zeit=NachChristfest&typ=proprium
+Altjahrsabend|https://www.daskirchenjahr.de/tag.php?name=altjahrsabend&zeit=Jahreswechsel&typ=proprium
+Neujahrstag|https://www.daskirchenjahr.de/tag.php?name=neujahr&zeit=Jahreswechsel&typ=proprium
+2. Sonntag nach dem Christfest|https://www.daskirchenjahr.de/tag.php?name=2nchristfest&zeit=NachChristfest&typ=proprium
+Epiphanias|https://www.daskirchenjahr.de/tag.php?name=epiphaniastag&zeit=Epiphanias&typ=proprium
+1. Sonntag nach Epiphanias|https://www.daskirchenjahr.de/tag.php?name=1nepiphanias&zeit=Epiphanias&typ=proprium
+2. Sonntag nach Epiphanias|https://www.daskirchenjahr.de/tag.php?name=2nepiphanias&zeit=Epiphanias&typ=proprium
+3. Sonntag nach Epiphanias|https://www.daskirchenjahr.de/tag.php?name=3nepiphanias&zeit=Epiphanias&typ=proprium
+Letzter Sonntag nach Epiphanias|https://www.daskirchenjahr.de/tag.php?name=lnepiphanias&zeit=Epiphanias&typ=proprium
+Darstellung des Herrn|https://www.daskirchenjahr.de/tag.php?name=lichtmess&zeit=AndereFeste1&typ=proprium
+5. Sonntag vor der Passionszeit|https://www.daskirchenjahr.de/tag.php?name=5vdfasten&zeit=Vorfasten&typ=proprium
+4. Sonntag vor der Passionszeit|https://www.daskirchenjahr.de/tag.php?name=4vdfasten&zeit=Vorfasten&typ=proprium
+Septuagesimae|https://www.daskirchenjahr.de/tag.php?name=septuagesimae&zeit=Vorfasten&typ=proprium
+Sexagesimae|https://www.daskirchenjahr.de/tag.php?name=sexagesimae&zeit=Vorfasten&typ=proprium
+Estomihi|https://www.daskirchenjahr.de/tag.php?name=estomihi&zeit=Vorfasten&typ=proprium
+Aschermittwoch|https://www.daskirchenjahr.de/tag.php?name=aschermittwoch&zeit=Fasten&typ=proprium
+Invokavit|https://www.daskirchenjahr.de/tag.php?name=invokavit&zeit=Fasten&typ=proprium
+Reminiszere|https://www.daskirchenjahr.de/tag.php?name=reminiszere&zeit=Fasten&typ=proprium
+Okuli|https://www.daskirchenjahr.de/tag.php?name=okuli&zeit=Fasten&typ=proprium
+Lätare|https://www.daskirchenjahr.de/tag.php?name=laetare&zeit=Fasten&typ=proprium
+Judika|https://www.daskirchenjahr.de/tag.php?name=judika&zeit=Fasten&typ=proprium
+Palmsonntag|https://www.daskirchenjahr.de/tag.php?name=palmarum&zeit=HeiligeWoche&typ=proprium
+Gründonnerstag|https://www.daskirchenjahr.de/tag.php?name=gruendonnerstag&zeit=HeiligeWoche&typ=proprium
+Karfreitag|https://www.daskirchenjahr.de/tag.php?name=karfreitag&zeit=HeiligeWoche&typ=proprium
+Ostersonntag|https://www.daskirchenjahr.de/tag.php?name=osternacht&zeit=Ostern&typ=proprium
+Ostermontag|https://www.daskirchenjahr.de/tag.php?name=ostermontag&zeit=Ostern&typ=proprium
+Miserikordias Domini|https://www.daskirchenjahr.de/tag.php?name=miserikordiasdomini&zeit=Ostern&typ=proprium
+Jubilate|https://www.daskirchenjahr.de/tag.php?name=jubilate&zeit=Ostern&typ=proprium
+Kantate|https://www.daskirchenjahr.de/tag.php?name=kantate&zeit=Ostern&typ=proprium
+Rogate|https://www.daskirchenjahr.de/tag.php?name=rogate&zeit=Ostern&typ=proprium
+Christi Himmelfahrt|https://www.daskirchenjahr.de/tag.php?name=himmelfahrt&zeit=Ostern&typ=proprium
+Exaudi|https://www.daskirchenjahr.de/tag.php?name=exaudi&zeit=Ostern&typ=proprium
+Pfingstsonntag|https://www.daskirchenjahr.de/tag.php?name=pfingstsonntag&zeit=Pfingsten&typ=proprium
+Pfingstmontag|https://www.daskirchenjahr.de/tag.php?name=pfingstmontag&zeit=Pfingsten&typ=proprium
+Trinitatis|https://www.daskirchenjahr.de/tag.php?name=trinitatistag&zeit=Trinitatis&typ=proprium
+1. Sonntag nach Trinitatis|https://www.daskirchenjahr.de/tag.php?name=1ntrinitatis&zeit=Trinitatis&typ=proprium
+2. Sonntag nach Trinitatis|https://www.daskirchenjahr.de/tag.php?name=2ntrinitatis&zeit=Trinitatis&typ=proprium
+3. Sonntag nach Trinitatis|https://www.daskirchenjahr.de/tag.php?name=3ntrinitatis&zeit=Trinitatis&typ=proprium
+4. Sonntag nach Trinitatis|https://www.daskirchenjahr.de/tag.php?name=4ntrinitatis&zeit=Trinitatis&typ=proprium
+5. Sonntag nach Trinitatis|https://www.daskirchenjahr.de/tag.php?name=5ntrinitatis&zeit=Trinitatis&typ=proprium
+6. Sonntag nach Trinitatis|https://www.daskirchenjahr.de/tag.php?name=6ntrinitatis&zeit=Trinitatis&typ=proprium
+7. Sonntag nach Trinitatis|https://www.daskirchenjahr.de/tag.php?name=7ntrinitatis&zeit=Trinitatis&typ=proprium
+8. Sonntag nach Trinitatis|https://www.daskirchenjahr.de/tag.php?name=8ntrinitatis&zeit=Trinitatis&typ=proprium
+9. Sonntag nach Trinitatis|https://www.daskirchenjahr.de/tag.php?name=9ntrinitatis&zeit=Trinitatis&typ=proprium
+10. Sonntag nach Trinitatis|https://www.daskirchenjahr.de/tag.php?name=10ntrinitatis&zeit=Trinitatis&typ=proprium
+11. Sonntag nach Trinitatis|https://www.daskirchenjahr.de/tag.php?name=11ntrinitatis&zeit=Trinitatis&typ=proprium
+12. Sonntag nach Trinitatis|https://www.daskirchenjahr.de/tag.php?name=12ntrinitatis&zeit=Trinitatis&typ=proprium
+13. Sonntag nach Trinitatis|https://www.daskirchenjahr.de/tag.php?name=13ntrinitatis&zeit=Trinitatis&typ=proprium
+14. Sonntag nach Trinitatis|https://www.daskirchenjahr.de/tag.php?name=14ntrinitatis&zeit=Trinitatis&typ=proprium
+15. Sonntag nach Trinitatis|https://www.daskirchenjahr.de/tag.php?name=15ntrinitatis&zeit=Trinitatis&typ=proprium
+16. Sonntag nach Trinitatis|https://www.daskirchenjahr.de/tag.php?name=16ntrinitatis&zeit=Trinitatis&typ=proprium
+17. Sonntag nach Trinitatis|https://www.daskirchenjahr.de/tag.php?name=17ntrinitatis&zeit=Trinitatis&typ=proprium
+18. Sonntag nach Trinitatis|https://www.daskirchenjahr.de/tag.php?name=18ntrinitatis&zeit=Trinitatis&typ=proprium
+19. Sonntag nach Trinitatis|https://www.daskirchenjahr.de/tag.php?name=19ntrinitatis&zeit=Trinitatis&typ=proprium
+20. Sonntag nach Trinitatis|https://www.daskirchenjahr.de/tag.php?name=20ntrinitatis&zeit=Trinitatis&typ=proprium
+21. Sonntag nach Trinitatis|https://www.daskirchenjahr.de/tag.php?name=21ntrinitatis&zeit=Trinitatis&typ=proprium
+22. Sonntag nach Trinitatis|https://www.daskirchenjahr.de/tag.php?name=22ntrinitatis&zeit=Trinitatis&typ=proprium
+23. Sonntag nach Trinitatis|https://www.daskirchenjahr.de/tag.php?name=23ntrinitatis&zeit=Trinitatis&typ=proprium
+24. Sonntag nach Trinitatis|https://www.daskirchenjahr.de/tag.php?name=24ntrinitatis&zeit=Trinitatis&typ=proprium
+Drittletzter Sonntag des Kirchenjahres|https://www.daskirchenjahr.de/tag.php?name=drittletzter&zeit=Kirchenjahresende&typ=proprium
+Buß- und Bettag|https://www.daskirchenjahr.de/tag.php?name=bussundbettag&zeit=Kirchenjahresende&typ=proprium
+Ewigkeitssonntag|https://www.daskirchenjahr.de/tag.php?name=letzter&zeit=Kirchenjahresende&typ=proprium
+Johannistag|https://www.daskirchenjahr.de/tag.php?name=geburtjohannestaeufer&zeit=AndereFeste1&typ=proprium
+Michaelistag|https://www.daskirchenjahr.de/tag.php?name=erzengelmichael&zeit=AndereFeste2&typ=proprium
+Erntedankfest|https://www.daskirchenjahr.de/tag.php?name=erntedanktag&zeit=AndereFeste2&typ=proprium
+Reformationstag|https://www.daskirchenjahr.de/tag.php?name=reformation&zeit=AndereFeste2&typ=proprium`.split("\n").forEach(z => { const [a, u] = z.split("|"); DKJ[a] = u; });
+function predigtFuer(e){ return e ? (PREDIGT[reihe(e.Y)] || {})[e.name] || [] : []; }
+function bibelUrl(ref){
+  const m = ref.match(/^((?:\d\.\s?)?[A-Za-zÄÖÜäöüß]+)\s*(.*)$/);
+  if (!m) return null;
+  const buch = m[1].replace(/\s+/g, "");
+  const spec = m[2].replace(/(\d)[ab]\b/g, "$1").replace(/[()]/g, ".").replace(/\s+/g, "");
+  const tok = spec.match(/\d+|[,;.\-–]/g) || [];
+  let kap = null, erst = null, letzt = null;
+  for (let i = 0; i < tok.length; i++) {
+    const t = tok[i];
+    if (!/^\d+$/.test(t)) continue;
+    if (tok[i+1] === ",") { kap = Number(t); continue; }
+    if (kap === null) continue;
+    const v = [kap, Number(t)];
+    if (!erst) erst = v;
+    letzt = v;
+  }
+  if (!erst) return null;
+  let stelle;
+  if (erst[0] === letzt[0]) stelle = erst[1] === letzt[1] ? `${erst[0]},${erst[1]}` : `${erst[0]},${erst[1]}-${letzt[1]}`;
+  else stelle = `${erst[0]},${erst[1]}-${letzt[0]},${letzt[1]}`;
+  return "https://www.bibleserver.com/LUT/" + encodeURIComponent(buch) + stelle;
+}
+function predigtHtml(e, mitKopf = true){
+  const liste = predigtFuer(e);
+  const kopf = mitKopf ? `<div class="kicker" style="margin:0 0 4px">Predigttext · Reihe ${reihe(e.Y)}</div>` : "";
+  const mehr = mitKopf && DKJ[e.name] ? `<div class="mehr"><a href="${DKJ[e.name]}#:~:text=Proprium" target="_blank" rel="noopener">Mehr zum Tag auf daskirchenjahr.de</a></div>` : "";
+  if (!liste.length) return mitKopf ? `<div class="predigt">${kopf}<span class="leise">für diesen Tag in der App noch nicht hinterlegt</span>${mehr}</div>` : "";
+  return `<div class="predigt">${kopf}${liste.map(p => {
+    const url = bibelUrl(p.ref);
+    const txt = esc(p.ref);
+    return `<div>${p.label ? `<span class="leise">${esc(p.label)}: </span>` : ""}${url ? `<a href="${url}" target="_blank" rel="noopener">${txt}</a>` : txt}</div>`;
+  }).join("")}${mehr}</div>`;
+}
+
+/* ===== Formatierung ===== */
+const WT = ["Sonntag","Montag","Dienstag","Mittwoch","Donnerstag","Freitag","Samstag"];
+const WTK = ["So","Mo","Di","Mi","Do","Fr","Sa"];
+const MON = ["Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"];
+function datumLang(n, mitJahr=true){ const t = vonDn(n); return `${WT[wt(n)]}, ${t.d}. ${MON[t.m]}${mitJahr ? " " + t.y : ""}`; }
+function datumKurz(n){ const t = vonDn(n); return `${t.d}.${t.m+1}.`; }
+function abstand(tage){ return tage === 0 ? "heute" : tage === 1 ? "morgen" : tage === 2 ? "übermorgen" : `in ${tage} Tagen`; }
+function farbPunkt(f){ const F = FARBEN[f]; return F ? `<span class="punkt" style="background:${F.hex}"></span>` : ""; }
+
+/* ===== Ansicht: Kirchenjahr ===== */
+let ansichtDn = null, listeAnzahl = 10;
+function zeigeKirchenjahr(){
+  const echtHeute = heuteDn();
+  const n = ansichtDn ?? echtHeute;
+  const I = tagInfo(n);
+  const istHeute = n === echtHeute;
+  const F = FARBEN[I.farbe];
+  let html = "";
+
+  if (!speicher.lies("zuo.widmung.gesehen") && WIDMUNG.zeile) {
+    html += `<div class="karte widmung"><div class="kicker" style="color:inherit;opacity:.7">Gewidmet</div>
+      <p>${esc(WIDMUNG.zeile)}</p><div class="leise" style="color:inherit;opacity:.75">${esc(WIDMUNG.von)}</div>
+      <button class="textknopf" id="widmung-zu">Ausblenden</button></div>`;
+  }
+
+  html += `<div class="kopf"><h2>${istHeute ? "Heute" : "Ausgewählter Tag"}</h2><small>Kirchenjahr ${I.Y}/${String(I.Y+1).slice(2)}</small></div>`;
+
+  let kicker, titel, unter, wochenZeile = "";
+  if (I.primaer) {
+    kicker = datumLang(n, !istHeute);
+    titel = I.primaer.name; unter = I.primaer.sub;
+    const weitere = I.lit.slice(1).map(e => e.name);
+    if (weitere.length) unter = [unter, "zugleich " + weitere.join(", ")].filter(Boolean).join(" · ");
+    if (I.woche && I.woche.d !== n) wochenZeile = `<div class="leise" style="margin-top:6px">Woche: ${esc(I.woche.name)}</div>`;
+  } else {
+    kicker = datumLang(n, !istHeute) + " · Diese Woche";
+    titel = I.woche.name; unter = I.woche.sub;
+  }
+  const zivil = I.heute.filter(e => e.zivil).map(e => e.name);
+  html += `<div class="karte held" style="--lit:${F.hex}">
+    <div class="kicker">${esc(kicker)}</div>
+    <h1>${esc(titel)}</h1>
+    ${unter ? `<div class="unter">${esc(unter)}</div>` : ""}
+    ${wochenZeile}
+    <div class="zeile">
+      <span class="farbe">${farbPunkt(I.farbe)} ${F.name}${I.hinweis ? ` <span class="leise">(${esc(I.hinweis)})</span>` : ""}</span>
+      <span>Reihe ${I.reihe}</span>
+      <span class="leise">${esc(I.zeit)}</span>
+      ${I.feiertag ? `<span class="badge" style="margin:0">Feiertag in Sachsen${zivil.length ? ": " + esc(zivil.join(", ")) : ""}</span>` : ""}
+    </div>
+    ${predigtHtml(I.primaer || I.woche)}
+    <div class="datum-wahl" style="margin-top:14px">
+      <input type="date" id="datum" value="${isoVon(n)}" aria-label="Anderes Datum">
+      ${istHeute ? "" : `<button class="textknopf" id="zu-heute">Zurück zu heute</button>`}
+    </div>
+  </div>`;
+
+  // Kommender Sonntag
+  const so = n + (7 - wt(n));
+  const S = tagInfo(so);
+  const SP = S.primaer || S.woche;
+  const neuesJahr = S.Y !== I.Y;
+  html += `<div class="karte">
+    <div class="kicker">Kommender Sonntag · ${datumKurz(so)}</div>
+    <h2>${esc(SP.name)}</h2>
+    ${SP.sub ? `<div class="leise" style="margin-top:3px">${esc(SP.sub)}${S.lit.length > 1 ? " · zugleich " + esc(S.lit.slice(1).map(e => e.name).join(", ")) : ""}</div>` : (S.lit.length > 1 ? `<div class="leise" style="margin-top:3px">zugleich ${esc(S.lit.slice(1).map(e => e.name).join(", "))}</div>` : "")}
+    <div class="zeile"><span class="farbe">${farbPunkt(S.farbe)} ${FARBEN[S.farbe].name}${S.hinweis ? ` <span class="leise">(${esc(S.hinweis)})</span>` : ""}</span>
+    <span>Reihe ${S.reihe}${neuesJahr ? ` <span class="leise">· neues Kirchenjahr</span>` : ""}</span></div>
+    ${predigtHtml(SP)}
+  </div>`;
+
+  // Countdown
+  const ziele = ["1. Sonntag im Advent","Heiligabend","Ostersonntag","Pfingstsonntag","Reformationstag","Buß- und Bettag"]
+    .map(nm => naechstes(n, nm)).filter(Boolean).sort((a,b) => a.d - b.d).slice(0,4);
+  const kurzName = {"1. Sonntag im Advent":"1. Advent","Ostersonntag":"Ostern","Pfingstsonntag":"Pfingsten"};
+  html += `<div class="chips">${ziele.map(e => `<span class="chip">${esc(kurzName[e.name] || e.name)} <b>${abstand(e.d - n)}</b></span>`).join("")}</div>`;
+
+  // Liste
+  const liste = kommende(n + 1, listeAnzahl);
+  html += `<div class="karte"><div class="kicker">Demnächst</div><ul class="liste">` +
+    liste.map(e => `<li>
+      <div class="dat"><b>${datumKurz(e.d)}</b>${WTK[wt(e.d)]}</div>
+      <div class="name">${esc(e.name)}${e.feiertag ? `<span class="badge">Feiertag</span>` : ""}${e.sub ? `<small>${esc(e.sub)}</small>` : ""}${e.zivil ? "" : predigtHtml(e, false)}</div>
+      <div>${e.zivil ? "" : farbPunkt(e.farbe)}</div></li>`).join("") +
+    `</ul><button class="textknopf" id="mehr" style="margin-top:6px">Weitere anzeigen</button></div>`;
+
+  html += `<p class="fuss">Sonntage und Feste nach der Ordnung gottesdienstlicher Texte und Lieder (2018), Feiertage nach sächsischem Recht. Predigttexte nach den Übersichten der Deutschen Bibelgesellschaft (Exegese für die Predigt) und daskirchenjahr.de; die Bibellinks öffnen die Lutherbibel 2017 auf bibleserver.com. Die App rechnet ohne Internet. Liturgische Farben nach verbreitetem Gebrauch; örtliche Tradition kann abweichen.</p>`;
+
+  const v = $("#v-kirchenjahr");
+  v.innerHTML = html;
+  $("#datum", v).addEventListener("change", ev => {
+    const s = ev.target.value; if (!s) return;
+    const [yy,mm,dd] = s.split("-").map(Number);
+    ansichtDn = dn(yy, mm-1, dd); listeAnzahl = 10; zeigeKirchenjahr();
+  });
+  const zh = $("#zu-heute", v); if (zh) zh.onclick = () => { ansichtDn = null; listeAnzahl = 10; zeigeKirchenjahr(); };
+  $("#mehr", v).onclick = () => { listeAnzahl += 15; zeigeKirchenjahr(); };
+  const wz = $("#widmung-zu", v); if (wz) wz.onclick = () => { speicher.schreib("zuo.widmung.gesehen", true); zeigeKirchenjahr(); };
+}
+function isoVon(n){ const t = vonDn(n); return `${t.y}-${String(t.m+1).padStart(2,"0")}-${String(t.d).padStart(2,"0")}`; }
+
+/* ===== Sitzungsuhr ===== */
+const VORLAGEN = {
+  kv: {titel:"Sitzung des Kirchenvorstands", tops:[
+    ["Andacht",10],["Begrüßung, Beschlussfähigkeit, Tagesordnung",5],["Protokoll der letzten Sitzung",5],
+    ["Berichte aus Pfarramt und Ausschüssen",20],["Bauangelegenheiten",15],["Finanzen und Haushalt",15],
+    ["Personalangelegenheiten (nichtöffentlich)",15],["Termine und Verschiedenes",10],["Gebet und Segen",5]]},
+  dienst: {titel:"Dienstberatung", tops:[
+    ["Geistlicher Impuls",10],["Rückblick: Gottesdienste und Kasualien",10],["Terminabstimmung",15],
+    ["Vertretungen und Urlaub",10],["Aktuelle Themen",30],["Verschiedenes",10]]},
+  konvent: {titel:"Pfarrkonvent", tops:[
+    ["Andacht",15],["Theologischer Impuls und Aussprache",45],["Mitteilungen",20],
+    ["Austausch aus den Gemeinden",20],["Verschiedenes",10],["Reisesegen",5]]},
+  oekumene: {titel:"Stadtökumenekreis", tops:[
+    ["Gebet",10],["Begrüßung und Tagesordnung",5],["Berichte aus den Gemeinden",20],
+    ["Ökumenische Gottesdienste planen",20],["Termine und Verschiedenes",10],["Segen",5]]},
+  leer: {titel:"", tops:[["",5],["",10],["",15],["",15],["",10],["",5]]}
+};
+const TOP_VORSCHLAEGE = ["Andacht","Gebet","Begrüßung und Tagesordnung","Protokoll der letzten Sitzung","Berichte","Bauangelegenheiten","Finanzen und Haushalt","Personalangelegenheiten","Gemeindeleben und Veranstaltungen","Gottesdienste und Kasualien","Termine","Verschiedenes","Segen"];
+const MINUTEN = [5,10,15,20];
+let uid = 1;
+function ausVorlage(k){ const V = VORLAGEN[k]; return {titel: V.titel, tops: V.tops.map(([t,m]) => ({id: uid++, titel: "", vorschlag: t, an: false, min: m}))}; }
+function effTitel(t){ return t.titel.trim() || (t.an && t.vorschlag ? t.vorschlag : ""); }
+const SK = "zuo.sitzung.v2";
+let S = speicher.lies(SK);
+if (!S || !Array.isArray(S.tops)) { const v = ausVorlage("leer"); S = {titel: v.titel, beginn: "19:30", tops: v.tops, ton: false, lauf: null, bilanz: null}; }
+S.tops.forEach(t => { t.id = uid++; if (t.an === undefined) { t.an = !!t.titel.trim(); t.vorschlag = t.vorschlag || ""; } });
+const sichern = () => speicher.schreib(SK, S);
+
+function aktiveTops(){ return S.tops.filter(t => t.an && effTitel(t)); }
+function planMin(){ return (S.lauf ? S.tops : aktiveTops()).reduce((s,t) => s + (Number(t.min)||0), 0); }
+function dauer(min){ min = Math.round(min); const h = Math.floor(min/60), m = min%60; return h ? `${h} Std.${m ? " " + m + " Min." : ""}` : `${m} Min.`; }
+function uhrzeit(ms){ const d = new Date(ms); return `${String(d.getHours()).padStart(2,"0")}:${String(d.getMinutes()).padStart(2,"0")}`; }
+function mmss(ms){ const s = Math.floor(Math.abs(ms)/1000), h = Math.floor(s/3600), m = Math.floor((s%3600)/60), ss = s%60;
+  return h ? `${h}:${String(m).padStart(2,"0")}:${String(ss).padStart(2,"0")}` : `${String(m).padStart(2,"0")}:${String(ss).padStart(2,"0")}`; }
+function beginnPlusMin(hhmm, min){ const [h,m] = (hhmm||"19:30").split(":").map(Number); const t = (h*60 + m + min) % 1440; return `${String(Math.floor(t/60)).padStart(2,"0")}:${String(t%60).padStart(2,"0")}`; }
+
+function zeigeSitzung(){
+  if (S.lauf) return zeigeLauf();
+  if (S.bilanz) return zeigeBilanz();
+  zeigeEditor();
+}
+
+function zeigeEditor(){
+  const v = $("#v-sitzung");
+  v.innerHTML = `
+  <div class="kopf"><h2>Sitzungsuhr</h2><small>Tagesordnung mit Zeitbudget</small></div>
+  <div class="karte">
+    <label class="lab" for="s-titel">Sitzung</label>
+    <input class="feld" id="s-titel" value="${esc(S.titel)}" placeholder="Name der Sitzung (hier eintragen)" autocomplete="off">
+    <label class="lab" style="margin-top:12px">Vorlage</label>
+    <div class="vorlagen" style="margin-top:0">
+      <button class="knopf klein" data-vl="kv">Kirchenvorstand</button>
+      <button class="knopf klein" data-vl="dienst">Dienstberatung</button>
+      <button class="knopf klein" data-vl="konvent">Konvent</button>
+      <button class="knopf klein" data-vl="oekumene">Ökumene</button>
+      <button class="knopf klein" data-vl="leer">Leere Vorlage</button>
+    </div>
+    <div style="display:flex;align-items:center;gap:12px;margin-top:14px">
+      <label class="lab" for="s-beginn" style="margin:0">Beginn</label>
+      <input class="feld" type="time" id="s-beginn" value="${esc(S.beginn)}" style="width:130px">
+    </div>
+  </div>
+  <div class="karte"><div class="kicker">Tagesordnung · Dauer in Minuten</div>
+    <p class="leise" style="margin:0 0 6px">Vorschläge antippen, um sie zu übernehmen, oder einfach überschreiben. Was nicht ausgewählt ist, entfällt.</p><div id="tops"></div><div class="ende-zeile" id="ende-zeile"></div></div>
+  <button class="knopf breit" id="top-neu" style="margin-bottom:14px">+ TOP hinzufügen</button>
+  <datalist id="top-vorschlaege">${TOP_VORSCHLAEGE.map(x => `<option value="${esc(x)}">`).join("")}</datalist>
+  <div class="karte">
+    <div class="summe" id="summe"></div>
+    <label class="schalter"><input type="checkbox" id="s-ton" ${S.ton ? "checked" : ""}> Leiser Gong, wenn ein TOP seine Zeit erreicht</label>
+    <button class="knopf haupt breit" id="start" style="margin-top:16px">Sitzung beginnen</button>
+    <div class="leise" id="start-hinweis" style="margin-top:8px;text-align:center"></div>
+  </div>
+  <p class="fuss">Die Tagesordnung bleibt auf diesem Gerät gespeichert. Während die Uhr läuft, bleibt der Bildschirm an, soweit der Browser das erlaubt.</p>`;
+  zeichneTops();
+  $("#s-titel").oninput = e => { S.titel = e.target.value; sichern(); };
+  $("#s-beginn").onchange = e => { S.beginn = e.target.value; sichern(); summe(); };
+  $("#s-ton").onchange = e => { S.ton = e.target.checked; sichern(); };
+  v.querySelectorAll("[data-vl]").forEach(b => b.onclick = () => {
+    const x = ausVorlage(b.dataset.vl); S.titel = x.titel; S.tops = x.tops; sichern(); zeigeEditor();
+  });
+  $("#top-neu").onclick = () => { S.tops.push({id: uid++, titel: "", vorschlag: "", an: false, min: 10}); sichern(); zeichneTops(); const f = v.querySelectorAll(".top .feld"); f[f.length-1].focus(); };
+  $("#start").onclick = starte;
+}
+function summe(){
+  const el = $("#summe"); if (!el) return;
+  const p = planMin();
+  const n = aktiveTops().length;
+  el.innerHTML = `<span>${n} TOP${n === 1 ? "" : "s"} · ${dauer(p)}</span><span>Ende ca. ${beginnPlusMin(S.beginn, p)} Uhr</span>`;
+  const ez = $("#ende-zeile");
+  if (ez) ez.innerHTML = `<span>Sitzungsende</span><span>ca. ${beginnPlusMin(S.beginn, p)} Uhr</span>`;
+}
+function zeichneTops(){
+  const box = $("#tops");
+  let nr = 0;
+  box.innerHTML = S.tops.map((t,i) => {
+    const an = t.an && !!effTitel(t);
+    const n = an ? ++nr : "";
+    return `
+    <div class="top${an ? " gewaehlt" : ""}" data-i="${i}">
+      <div class="top-kopf">
+        <button class="haken" data-a="wahl" aria-pressed="${an}" aria-label="${an ? "TOP abwählen" : "TOP übernehmen"}">${n}</button>
+        <input class="feld" data-f="titel" value="${esc(t.titel)}" placeholder="${esc(t.vorschlag || "Titel (hier eintragen)")}" list="top-vorschlaege" autocomplete="off">
+        <button class="icon" data-a="weg" aria-label="TOP entfernen">✕</button></div>
+      <div class="top-fuss">
+        ${MINUTEN.map(m => `<button class="mchip${t.min === m ? " an" : ""}" data-m="${m}">${m}</button>`).join("")}
+        <input class="mfrei${MINUTEN.includes(t.min) ? "" : " an"}" type="number" inputmode="numeric" min="1" max="600" data-f="min" value="${MINUTEN.includes(t.min) ? "" : t.min}" placeholder="frei" aria-label="Minuten frei eintragen">
+        <span class="rechts">
+          <button class="icon" data-a="hoch" aria-label="nach oben" ${i === 0 ? "disabled" : ""}>↑</button>
+          <button class="icon" data-a="runter" aria-label="nach unten" ${i === S.tops.length-1 ? "disabled" : ""}>↓</button>
+        </span>
+      </div>
+    </div>`; }).join("") || `<p class="leise">Noch keine Tagesordnungspunkte.</p>`;
+  box.querySelectorAll(".top").forEach(row => {
+    const i = Number(row.dataset.i), t = S.tops[i];
+    const titel = row.querySelector('[data-f="titel"]');
+    titel.oninput = () => {
+      const vorher = t.an && !!effTitel(t);
+      t.titel = titel.value;
+      if (t.titel.trim()) t.an = true;
+      sichern();
+      if (vorher !== (t.an && !!effTitel(t))) nummeriere(); else summe();
+    };
+    const frei = row.querySelector('[data-f="min"]');
+    const markiere = () => {
+      row.querySelectorAll(".mchip").forEach(c => c.classList.toggle("an", Number(c.dataset.m) === t.min && frei.value === ""));
+      frei.classList.toggle("an", frei.value !== "");
+    };
+    const waehle = () => { if (!t.an && (t.vorschlag || t.titel.trim())) { t.an = true; nummeriere(); } };
+    row.querySelectorAll(".mchip").forEach(c => c.onclick = () => { t.min = Number(c.dataset.m); frei.value = ""; markiere(); waehle(); sichern(); summe(); });
+    frei.oninput = () => { const x = parseInt(frei.value,10); if (x > 0) { t.min = Math.min(600, x); waehle(); sichern(); summe(); } markiere(); };
+    row.querySelectorAll("[data-a]").forEach(b => b.onclick = () => {
+      const a = b.dataset.a;
+      if (a === "wahl") {
+        if (t.an && effTitel(t)) t.an = false;
+        else if (t.vorschlag || t.titel.trim()) t.an = true;
+        else { titel.focus(); return; }
+        sichern(); nummeriere(); return;
+      }
+      if (a === "hoch" && i > 0) [S.tops[i-1], S.tops[i]] = [S.tops[i], S.tops[i-1]];
+      if (a === "runter" && i < S.tops.length-1) [S.tops[i+1], S.tops[i]] = [S.tops[i], S.tops[i+1]];
+      if (a === "weg") S.tops.splice(i,1);
+      sichern(); zeichneTops();
+    });
+  });
+  summe();
+}
+function nummeriere(){
+  let nr = 0;
+  $("#tops").querySelectorAll(".top").forEach(row => {
+    const t = S.tops[Number(row.dataset.i)], an = t.an && !!effTitel(t);
+    row.classList.toggle("gewaehlt", an);
+    const h = row.querySelector(".haken");
+    h.textContent = an ? ++nr : "";
+    h.setAttribute("aria-pressed", an);
+    h.setAttribute("aria-label", an ? "TOP abwählen" : "TOP übernehmen");
+  });
+  const sh = $("#start-hinweis"); if (sh) sh.textContent = "";
+  summe();
+}
+
+/* Lauf */
+let tick = null, wachsperre = null, audio = null;
+async function wachHalten(){ try { if ("wakeLock" in navigator && S.lauf && document.visibilityState === "visible") wachsperre = await navigator.wakeLock.request("screen"); } catch(e) {} }
+document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible" && S.lauf) wachHalten(); });
+function audioBereit(){ try { if (!audio) audio = new (window.AudioContext || window.webkitAudioContext)(); if (audio.state === "suspended") audio.resume(); } catch(e) { audio = null; } }
+function gong(){
+  if (!audio) return;
+  try {
+    const t0 = audio.currentTime;
+    [[392,0.22],[588,0.09],[784,0.05]].forEach(([f,g]) => {
+      const o = audio.createOscillator(), v = audio.createGain();
+      o.type = "sine"; o.frequency.value = f;
+      v.gain.setValueAtTime(0.0001, t0); v.gain.exponentialRampToValueAtTime(g, t0 + 0.02); v.gain.exponentialRampToValueAtTime(0.0001, t0 + 2.4);
+      o.connect(v).connect(audio.destination); o.start(t0); o.stop(t0 + 2.5);
+    });
+  } catch(e) {}
+}
+function verstrichen(i, jetzt = Date.now()){ const L = S.lauf; return L.ist[i] + (i === L.idx && L.seit ? jetzt - L.seit : 0); }
+function verbuchen(){ const L = S.lauf, j = Date.now(); if (L.seit) { L.ist[L.idx] += j - L.seit; L.seit = j; } }
+
+function starte(){
+  const aktiv = aktiveTops();
+  if (!aktiv.length) { const h = $("#start-hinweis"); if (h) h.textContent = "Bitte mindestens einen TOP auswählen oder eintragen."; return; }
+  S.tops = aktiv.map(t => ({id: t.id, titel: effTitel(t), vorschlag: "", an: true, min: t.min}));
+  const j = Date.now();
+  S.lauf = {idx: 0, beginn: j, ist: S.tops.map(() => 0), seit: j, planEnde: j + planMin()*60000, gegongt: []};
+  S.bilanz = null; sichern();
+  if (S.ton) audioBereit();
+  wachHalten();
+  zeigeLauf();
+}
+function zeigeLauf(){
+  const v = $("#v-sitzung");
+  v.innerHTML = `
+  <div class="karte lauf" id="lauf">
+    <div class="wo" id="l-wo"></div>
+    <h1 id="l-titel"></h1>
+    <div class="uhr" id="l-uhr">00:00</div>
+    <div class="uhr-l" id="l-uhr-l"></div>
+    <div class="balken"><i id="l-balken"></i></div>
+    <div class="steuer">
+      <button class="knopf" id="l-zurueck" aria-label="vorheriger TOP">←</button>
+      <button class="knopf" id="l-pause">Pause</button>
+      <button class="knopf haupt" id="l-weiter">Nächster TOP</button>
+    </div>
+    <div class="danach" id="l-danach"></div>
+  </div>
+  <div class="karte">
+    <div class="prognose">
+      <div><span>Ende bei diesem Tempo</span><b id="l-ende"></b><span id="l-delta"></span></div>
+      <div><span>Sitzung läuft seit</span><b id="l-gesamt"></b><span id="l-plan"></span></div>
+    </div>
+  </div>
+  <div class="karte"><div class="kicker">Tagesordnung</div><ul class="mini-liste" id="l-liste"></ul></div>
+  <button class="knopf breit" id="l-ende-btn">Sitzung beenden</button>`;
+  $("#l-weiter").onclick = () => { verbuchen(); const L = S.lauf;
+    if (L.idx < S.tops.length-1) { L.idx++; L.seit = Date.now(); sichern(); aktualisiere(true); } else beende(); };
+  $("#l-zurueck").onclick = () => { verbuchen(); const L = S.lauf; if (L.idx > 0) { L.idx--; L.seit = L.seit ? Date.now() : null; sichern(); aktualisiere(true); } };
+  $("#l-pause").onclick = () => { const L = S.lauf, j = Date.now();
+    if (L.seit) { L.ist[L.idx] += j - L.seit; L.seit = null; } else L.seit = j; sichern(); aktualisiere(true); };
+  let sicher = null;
+  $("#l-ende-btn").onclick = e => {
+    const b = e.currentTarget;
+    if (sicher) { clearTimeout(sicher); beende(); return; }
+    b.textContent = "Wirklich beenden? Nochmal tippen"; b.classList.add("haupt");
+    sicher = setTimeout(() => { sicher = null; b.textContent = "Sitzung beenden"; b.classList.remove("haupt"); }, 3500);
+  };
+  clearInterval(tick); tick = setInterval(() => aktualisiere(false), 250);
+  aktualisiere(true);
+}
+function aktualisiere(voll){
+  if (!S.lauf || !$("#lauf")) { clearInterval(tick); return; }
+  const L = S.lauf, j = Date.now(), t = S.tops[L.idx];
+  const plan = t.min * 60000, ist = verstrichen(L.idx, j), rest = plan - ist;
+  const warnAb = Math.max(60000, plan * 0.2);
+  const zustand = rest < 0 ? "over" : rest <= warnAb ? "warn" : "ok";
+  const box = $("#lauf");
+  box.className = "karte lauf " + (zustand === "ok" ? "" : zustand) + (L.seit ? "" : " pausiert");
+  $("#l-uhr").textContent = (rest < 0 ? "+" : "") + mmss(rest);
+  $("#l-uhr-l").textContent = !L.seit ? "angehalten" : rest < 0 ? "über der geplanten Zeit" : "verbleibend";
+  $("#l-balken").style.width = Math.min(100, ist / plan * 100) + "%";
+  if (rest < 0 && S.ton && !L.gegongt.includes(L.idx)) { L.gegongt.push(L.idx); sichern(); gong(); }
+  let spaeter = 0; for (let i = L.idx+1; i < S.tops.length; i++) spaeter += S.tops[i].min * 60000;
+  const ende = j + Math.max(rest, 0) + spaeter;
+  const delta = Math.round((ende - L.planEnde) / 60000);
+  $("#l-ende").textContent = uhrzeit(ende) + " Uhr";
+  $("#l-delta").innerHTML = delta > 0 ? `<span class="plus">${delta} Min. hinter dem Plan</span>` : delta < 0 ? `<span class="minus">${-delta} Min. Vorsprung</span>` : "im Plan";
+  $("#l-gesamt").textContent = mmss(j - L.beginn);
+  $("#l-plan").textContent = `geplant ${dauer(planMin())}`;
+  if (voll) {
+    $("#l-wo").textContent = `${S.titel || "Sitzung"} · TOP ${L.idx+1} von ${S.tops.length}`;
+    $("#l-titel").textContent = t.titel;
+    $("#l-pause").textContent = L.seit ? "Pause" : "Weiter";
+    $("#l-zurueck").disabled = L.idx === 0; $("#l-zurueck").style.opacity = L.idx === 0 ? .35 : 1;
+    $("#l-weiter").textContent = L.idx < S.tops.length-1 ? "Nächster TOP" : "Abschließen";
+    const n = S.tops[L.idx+1];
+    $("#l-danach").textContent = n ? `Danach: ${n.titel} (${n.min} Min.)` : "Letzter Tagesordnungspunkt";
+  }
+  $("#l-liste").innerHTML = S.tops.map((x,i) => {
+    const e = verstrichen(i, j), d = e - x.min*60000;
+    const z = i < L.idx || (i !== L.idx && e > 0) ? `${mmss(e)} <span class="${d > 0 ? "plus" : "minus"}">${d > 0 ? "+" : "−"}${Math.round(Math.abs(d)/60000)}</span>` : i === L.idx ? mmss(e) + " / " + x.min + ":00" : x.min + " Min.";
+    return `<li class="${i === L.idx ? "jetzt" : i < L.idx ? "fertig" : ""}"><span>${i+1}. ${esc(x.titel)}</span><span class="z">${z}</span></li>`;
+  }).join("") + `<li class="ende"><span>Sitzungsende</span><span class="z">ca. ${uhrzeit(ende)} Uhr</span></li>`;
+}
+function beende(){
+  verbuchen();
+  const L = S.lauf, j = Date.now();
+  S.bilanz = {titel: S.titel || "Sitzung", beginn: L.beginn, ende: j, tops: S.tops.map((t,i) => ({titel: t.titel, plan: t.min, ist: L.ist[i]}))};
+  S.lauf = null; sichern(); clearInterval(tick);
+  try { if (wachsperre) { wachsperre.release(); wachsperre = null; } } catch(e) {}
+  zeigeBilanz();
+}
+function datumVon(ms){ const d = new Date(ms); return `${d.getDate()}.${d.getMonth()+1}.${d.getFullYear()}`; }
+function protokollTitel(B){ return B.protokollTitel ?? `Protokoll: ${B.titel} vom ${datumVon(B.beginn)}`; }
+function bilanzText(B){
+  const plan = B.tops.reduce((s,t) => s + t.plan, 0), ist = (B.ende - B.beginn) / 60000;
+  const zeilen = B.tops.map((t,i) => `TOP ${i+1} ${t.titel}: geplant ${t.plan} Min., ${t.ist ? "tatsächlich " + Math.round(t.ist/60000) + " Min." : "nicht behandelt"}`);
+  return `${protokollTitel(B)}\n\nSitzungsbeginn: ${uhrzeit(B.beginn)} Uhr\n` + zeilen.join("\n") +
+    `\nSitzungsende: ${uhrzeit(B.ende)} Uhr\n\nDauer: ${dauer(ist)} (geplant ${dauer(plan)})`;
+}
+function zeigeBilanz(){
+  const B = S.bilanz, v = $("#v-sitzung");
+  const plan = B.tops.reduce((s,t) => s + t.plan, 0), ist = Math.round((B.ende - B.beginn) / 60000);
+  const diff = ist - plan;
+  v.innerHTML = `
+  <div class="kopf"><h2>Sitzungsbilanz</h2><small>${uhrzeit(B.beginn)}–${uhrzeit(B.ende)} Uhr</small></div>
+  <div class="karte">
+    <label class="lab" for="b-titel">Titel fürs Protokoll</label>
+    <input class="feld" id="b-titel" value="${esc(protokollTitel(B))}" autocomplete="off">
+  </div>
+  <div class="karte">
+    <div class="kicker">${esc(B.titel)}</div>
+    <h1 style="font-size:26px">${dauer(ist)} <span class="leise" style="font-family:var(--sans);font-size:16px">statt ${dauer(plan)}</span></h1>
+    <div class="leise" style="margin-top:4px">${diff > 0 ? diff + " Min. länger als geplant" : diff < 0 ? -diff + " Min. früher fertig" : "Punktlandung"}</div>
+    <table class="bilanz"><thead><tr><th>TOP</th><th>Plan</th><th>Ist</th><th>±</th></tr></thead><tbody>
+    ${B.tops.map((t,i) => { const m = Math.round(t.ist/60000), d = m - t.plan;
+      return `<tr><td>${i+1}. ${esc(t.titel)}</td><td>${t.plan}</td><td>${t.ist ? m : "–"}</td><td class="${t.ist ? (d > 0 ? "plus" : "minus") : ""}">${t.ist ? (d > 0 ? "+" : d < 0 ? "−" : "") + Math.abs(d) : ""}</td></tr>`; }).join("")}
+    </tbody><tfoot><tr><td>Sitzungsende</td><td colspan="3">${uhrzeit(B.ende)} Uhr</td></tr></tfoot></table>
+  </div>
+  <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+    <button class="knopf" id="b-kopie">Als Text kopieren</button><span id="b-ok"></span>
+    <button class="knopf haupt" id="b-neu" style="margin-left:auto">Neue Sitzung</button>
+  </div>
+  <div id="b-feld"></div>`;
+  $("#b-titel").oninput = e => { B.protokollTitel = e.target.value; sichern(); };
+  $("#b-kopie").onclick = async () => {
+    const txt = bilanzText(B);
+    try { await navigator.clipboard.writeText(txt); $("#b-ok").innerHTML = `<span class="kopiert">Kopiert</span>`; }
+    catch(e) { $("#b-feld").innerHTML = `<textarea class="kopie" readonly>${esc(txt)}</textarea>`; const ta = $("#b-feld textarea"); ta.focus(); ta.select(); }
+  };
+  $("#b-neu").onclick = () => { S.bilanz = null; sichern(); zeigeEditor(); };
+}
+
+/* ===== Über ===== */
+function zeigeInfo(){
+  $("#v-info").innerHTML = `
+  <div class="kopf"><h2>Zeit &amp; Ordnung</h2><small>Version 1.0</small></div>
+  <div class="karte widmung"><p>${esc(WIDMUNG.zeile)}</p><div class="leise" style="color:inherit;opacity:.75">${esc(WIDMUNG.von)}</div></div>
+  <div class="karte info">
+    <h3>Auf den Home-Bildschirm</h3>
+    <p><b>iPhone:</b> Seite in Safari öffnen, unten auf das Teilen-Symbol tippen, „Zum Home-Bildschirm“ wählen. Danach startet die App wie jede andere.</p>
+    <p><b>Windows:</b> Seite in Edge öffnen, Menü „…“ → „Apps“ → „Diese Website als App installieren“.</p>
+  </div>
+  <div class="karte info">
+    <h3>Kirchenjahr</h3>
+    <p>Welcher Sonntag, welche Farbe, welche Perikopenreihe – für heute und jedes andere Datum. Sonntage, Feste und sächsische Feiertage werden aus dem Ostertermin errechnet, auch für kommende Jahre.</p>
+    <h3 style="margin-top:14px">Sitzungsuhr</h3>
+    <p>Tagesordnung eintragen, Minuten vergeben, Sitzung beginnen. Die Uhr zählt pro TOP herunter, wird gelb, wenn es knapp wird, und rot, wenn die Zeit überschritten ist. Die Prognose zeigt jederzeit, wann die Sitzung bei diesem Tempo endet. Am Schluss steht eine Bilanz, die sich ins Protokoll kopieren lässt.</p>
+  </div>
+  <div class="karte info">
+    <h3>Daten</h3>
+    <p>Die App braucht kein Konto und schickt nichts ins Netz. Tagesordnungen bleiben im Browser dieses Geräts.</p>
+  </div>`;
+}
+
+/* ===== Navigation ===== */
+const ANSICHTEN = ["kirchenjahr","sitzung","info"];
+let aktuell = null;
+function zeige(h){
+  if (!ANSICHTEN.includes(h)) h = S.lauf ? "sitzung" : "kirchenjahr";
+  aktuell = h;
+  ANSICHTEN.forEach(a => $("#v-" + a).classList.toggle("versteckt", a !== h));
+  document.querySelectorAll("nav.tabs button").forEach(b => b.classList.toggle("an", b.dataset.v === h));
+  if (h === "kirchenjahr") zeigeKirchenjahr();
+  if (h === "sitzung") zeigeSitzung();
+  if (h === "info") zeigeInfo();
+  window.scrollTo(0,0);
+}
+document.querySelectorAll("nav.tabs button").forEach(b => b.addEventListener("click", () => zeige(b.dataset.v)));
+window.addEventListener("hashchange", () => zeige((location.hash || "").replace("#","")));
+// Datumswechsel um Mitternacht
+let letzterTag = heuteDn();
+setInterval(() => { const t = heuteDn(); if (t !== letzterTag) { letzterTag = t; if (aktuell === "kirchenjahr" && ansichtDn === null) zeigeKirchenjahr(); } }, 60000);
+zeige((location.hash || "").replace("#",""));
+</script>
+</body>
+</html>
