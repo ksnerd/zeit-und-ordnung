@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Zeit &amp; Ordnung</title>
+<title>Kirchenjahr und Sitzungstimer</title>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="Zeit &amp; Ordnung">
+<meta name="apple-mobile-web-app-title" content="Kirchenjahr und Sitzungstimer">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="theme-color" content="#F3EEE4" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#161D20" media="(prefers-color-scheme: dark)">
@@ -174,7 +174,7 @@ nav.tabs button.an{color:var(--accent);font-weight:600}
     Kirchenjahr</button>
   <button type="button" data-v="sitzung">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="13" r="7.5"/><path d="M12 13V9M12 13l3 2M9.5 3h5M12 3v2.5"/></svg>
-    Sitzungsuhr</button>
+    Sitzungstimer</button>
   <button type="button" data-v="info">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5.5"/><circle cx="12" cy="7.8" r="1" fill="currentColor"/></svg>
     Über</button>
@@ -1059,7 +1059,7 @@ function zeigeSitzung(){
 function zeigeEditor(){
   const v = $("#v-sitzung");
   v.innerHTML = `
-  <div class="kopf"><h2>Sitzungsuhr</h2><small>Tagesordnung mit Zeitbudget</small></div>
+  <div class="kopf"><h2>Sitzungstimer</h2><small>Tagesordnung mit Zeitbudget</small></div>
   <div class="karte">
     <label class="lab" for="s-titel">Sitzung</label>
     <input class="feld" id="s-titel" value="${esc(S.titel)}" placeholder="Name der Sitzung (hier eintragen)" autocomplete="off">
@@ -1083,6 +1083,7 @@ function zeigeEditor(){
   <div class="karte">
     <div class="summe" id="summe"></div>
     <label class="schalter"><input type="checkbox" id="s-ton" ${S.ton ? "checked" : ""}> Leiser Gong, wenn ein TOP seine Zeit erreicht</label>
+    <button class="textknopf" id="s-tontest" style="margin-left:30px">Gong testen</button>
     <button class="knopf haupt breit" id="start" style="margin-top:16px">Sitzung beginnen</button>
     <div class="leise" id="start-hinweis" style="margin-top:8px;text-align:center"></div>
   </div>
@@ -1090,7 +1091,8 @@ function zeigeEditor(){
   zeichneTops();
   $("#s-titel").oninput = e => { S.titel = e.target.value; sichern(); };
   $("#s-beginn").onchange = e => { S.beginn = e.target.value; sichern(); summe(); };
-  $("#s-ton").onchange = e => { S.ton = e.target.checked; sichern(); };
+  $("#s-ton").onchange = e => { S.ton = e.target.checked; sichern(); if (S.ton) audioBereit(); };
+  $("#s-tontest").onclick = () => { audioBereit(); gong(); };
   v.querySelectorAll("[data-vl]").forEach(b => b.onclick = () => {
     const x = ausVorlage(b.dataset.vl); S.titel = x.titel; S.tops = x.tops; sichern(); zeigeEditor();
   });
@@ -1175,22 +1177,48 @@ function nummeriere(){
 }
 
 /* Lauf */
-let tick = null, wachsperre = null, audio = null;
+let tick = null, wachsperre = null;
 async function wachHalten(){ try { if ("wakeLock" in navigator && S.lauf && document.visibilityState === "visible") wachsperre = await navigator.wakeLock.request("screen"); } catch(e) {} }
 document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible" && S.lauf) wachHalten(); });
-function audioBereit(){ try { if (!audio) audio = new (window.AudioContext || window.webkitAudioContext)(); if (audio.state === "suspended") audio.resume(); } catch(e) { audio = null; } }
-function gong(){
-  if (!audio) return;
+/* Gong: als WAV über ein <audio>-Element, damit er auf dem iPhone auch im Stumm-Modus und nach Freigabe durch einen Tipp spielt */
+let gongEl = null, gongFrei = false;
+function gongUrl(){
+  const sr = 22050, dauer = 2.6, n = Math.floor(sr * dauer);
+  const buf = new ArrayBuffer(44 + n * 2), v = new DataView(buf);
+  const str = (o, t) => { for (let i = 0; i < t.length; i++) v.setUint8(o + i, t.charCodeAt(i)); };
+  str(0, "RIFF"); v.setUint32(4, 36 + n * 2, true); str(8, "WAVE"); str(12, "fmt ");
+  v.setUint32(16, 16, true); v.setUint16(20, 1, true); v.setUint16(22, 1, true);
+  v.setUint32(24, sr, true); v.setUint32(28, sr * 2, true); v.setUint16(32, 2, true); v.setUint16(34, 16, true);
+  str(36, "data"); v.setUint32(40, n * 2, true);
+  const teile = [[392, 0.55, 1.6], [588, 0.22, 2.2], [784, 0.14, 2.8], [1176, 0.05, 4]];
+  for (let i = 0; i < n; i++) {
+    const t = i / sr, an = Math.min(1, t / 0.015);
+    let x = 0; for (const [f, a, d] of teile) x += a * Math.exp(-d * t) * Math.sin(2 * Math.PI * f * t);
+    v.setInt16(44 + i * 2, Math.max(-1, Math.min(1, x * an * 0.9)) * 32767, true);
+  }
+  return URL.createObjectURL(new Blob([buf], {type: "audio/wav"}));
+}
+function audioBereit(){
+  try { if (navigator.audioSession) navigator.audioSession.type = "playback"; } catch(e) {}
   try {
-    const t0 = audio.currentTime;
-    [[392,0.22],[588,0.09],[784,0.05]].forEach(([f,g]) => {
-      const o = audio.createOscillator(), v = audio.createGain();
-      o.type = "sine"; o.frequency.value = f;
-      v.gain.setValueAtTime(0.0001, t0); v.gain.exponentialRampToValueAtTime(g, t0 + 0.02); v.gain.exponentialRampToValueAtTime(0.0001, t0 + 2.4);
-      o.connect(v).connect(audio.destination); o.start(t0); o.stop(t0 + 2.5);
-    });
+    if (!gongEl) { gongEl = new Audio(gongUrl()); gongEl.preload = "auto"; }
+    if (!gongFrei) {
+      gongEl.muted = true;
+      const p = gongEl.play();
+      const fertig = () => { if (gongEl.muted) { gongEl.pause(); gongEl.currentTime = 0; gongEl.muted = false; } gongFrei = true; };
+      if (p && p.then) p.then(fertig).catch(() => { gongEl.muted = false; }); else fertig();
+    }
   } catch(e) {}
 }
+function gong(){
+  try {
+    if (!gongEl) audioBereit();
+    gongEl.muted = false; gongEl.currentTime = 0;
+    const p = gongEl.play(); if (p && p.catch) p.catch(() => {});
+  } catch(e) {}
+}
+// Nach Neuladen während einer laufenden Sitzung: beim ersten Tipp freischalten
+document.addEventListener("pointerdown", () => { if (S.ton && !gongFrei) audioBereit(); }, {passive: true});
 function verstrichen(i, jetzt = Date.now()){ const L = S.lauf; return L.ist[i] + (i === L.idx && L.seit ? jetzt - L.seit : 0); }
 function verbuchen(){ const L = S.lauf, j = Date.now(); if (L.seit) { L.ist[L.idx] += j - L.seit; L.seit = j; } }
 
@@ -1330,7 +1358,7 @@ function zeigeBilanz(){
 /* ===== Über ===== */
 function zeigeInfo(){
   $("#v-info").innerHTML = `
-  <div class="kopf"><h2>Zeit &amp; Ordnung</h2><small>Version 1.0</small></div>
+  <div class="kopf"><h2>Kirchenjahr und Sitzungstimer</h2><small>Version 1.1</small></div>
   <div class="karte widmung"><p>${esc(WIDMUNG.zeile)}</p><div class="leise" style="color:inherit;opacity:.75">${esc(WIDMUNG.von)}</div></div>
   <div class="karte info">
     <h3>Auf den Home-Bildschirm</h3>
@@ -1340,7 +1368,7 @@ function zeigeInfo(){
   <div class="karte info">
     <h3>Kirchenjahr</h3>
     <p>Welcher Sonntag, welche Farbe, welche Perikopenreihe – für heute und jedes andere Datum. Sonntage, Feste und sächsische Feiertage werden aus dem Ostertermin errechnet, auch für kommende Jahre.</p>
-    <h3 style="margin-top:14px">Sitzungsuhr</h3>
+    <h3 style="margin-top:14px">Sitzungstimer</h3>
     <p>Tagesordnung eintragen, Minuten vergeben, Sitzung beginnen. Die Uhr zählt pro TOP herunter, wird gelb, wenn es knapp wird, und rot, wenn die Zeit überschritten ist. Die Prognose zeigt jederzeit, wann die Sitzung bei diesem Tempo endet. Am Schluss steht eine Bilanz, die sich ins Protokoll kopieren lässt.</p>
   </div>
   <div class="karte info">
